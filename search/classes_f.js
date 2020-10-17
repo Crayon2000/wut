@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wpadstatusprocontroller',['WPADStatusProController',['../group__padscore__wpad.html#structWPADStatusProController',1,'']]],
-  ['wpadvec2d',['WPADVec2D',['../group__padscore__wpad.html#structWPADVec2D',1,'']]]
+  ['ucasyncparams_4520',['UCAsyncParams',['../group__coreinit__userconfig.html#structUCAsyncParams',1,'']]],
+  ['ucsysconfig_4521',['UCSysConfig',['../group__coreinit__userconfig.html#structUCSysConfig',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kpaderror',['KPADError',['../group__padscore__kpad.html#ga24f9946812e70c194e190b6880d030cc',1,'kpad.h']]]
+  ['ioserror_6984',['IOSError',['../group__coreinit__ios.html#ga1362cf868834e0015ad0f972b9356ae2',1,'ios.h']]],
+  ['iosopenmode_6985',['IOSOpenMode',['../group__coreinit__ios.html#ga62f5e698526256540de1c70858351189',1,'ios.h']]]
 ];

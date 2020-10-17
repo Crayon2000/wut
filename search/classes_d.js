@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sockaddr',['sockaddr',['../group__nsysnet__socket.html#structsockaddr',1,'']]],
-  ['sockaddr_5fin',['sockaddr_in',['../group__nsysnet__socket.html#structsockaddr__in',1,'']]],
-  ['sockaddr_5fstorage',['sockaddr_storage',['../group__nsysnet__socket.html#structsockaddr__storage',1,'']]]
+  ['receiverarg_4515',['ReceiverArg',['../namespacenn_1_1swkbd.html#structnn_1_1swkbd_1_1ReceiverArg',1,'nn::swkbd']]],
+  ['result_4516',['Result',['../classnn_1_1Result.html',1,'nn']]]
 ];

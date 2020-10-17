@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['key',['key',['../structcurl__khkey.html#acd3d88da3c0e0313c3645ff34f62f542',1,'curl_khkey']]],
-  ['keyboardarg',['keyboardArg',['../namespacenn_1_1swkbd.html#a9259e816a0de6d1ca23e67f29d3dd668',1,'nn::swkbd::AppearArg']]],
-  ['keytype',['keytype',['../structcurl__khkey.html#a75be9965d13afd5ae0f14ad0cc51dcbb',1,'curl_khkey']]],
-  ['kpad',['kpad',['../namespacenn_1_1swkbd.html#abd229e8a52d27dc7854afacd9cf65a1a',1,'nn::swkbd::ControllerInfo']]]
+  ['join_5fgame_5fid_6030',['join_game_id',['../group__nn__acp__title.html#a3dcaed87bd4dbd6551aae88c1f310e7b',1,'ACPMetaXml']]],
+  ['join_5fgame_5fmode_5fmask_6031',['join_game_mode_mask',['../group__nn__acp__title.html#aba498b209ca442bdf1aba38ee7ed0b3e',1,'ACPMetaXml']]]
 ];

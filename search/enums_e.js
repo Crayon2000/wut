@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['state',['State',['../namespacenn_1_1swkbd.html#a5d74787dedbc4e11c1ab15bf487e61f8',1,'nn::swkbd']]]
+  ['regiontype_7026',['RegionType',['../namespacenn_1_1swkbd.html#aa6498d628b446c18e1c5087341741ec2',1,'nn::swkbd']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['sockaddr_4517',['sockaddr',['../group__nsysnet__socket.html#structsockaddr',1,'']]],
-  ['sockaddr_5fin_4518',['sockaddr_in',['../group__nsysnet__socket.html#structsockaddr__in',1,'']]],
-  ['sockaddr_5fstorage_4519',['sockaddr_storage',['../group__nsysnet__socket.html#structsockaddr__storage',1,'']]]
+  ['servent_4934',['servent',['../netdb_8h.html#structservent',1,'']]],
+  ['sockaddr_4935',['sockaddr',['../sys_2socket_8h.html#structsockaddr',1,'']]],
+  ['sockaddr_5fin_4936',['sockaddr_in',['../in_8h.html#structsockaddr__in',1,'']]],
+  ['sockaddr_5fstorage_4937',['sockaddr_storage',['../sys_2socket_8h.html#structsockaddr__storage',1,'']]]
 ];

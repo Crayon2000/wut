@@ -101,6 +101,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga09658d49df7c02cbe47b5043fb81c211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2b55836ecc2f989e6f7511108dab393"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__coreinit__dynload.html#ga49fab4b5016c916e35c068cd84ed5177">OSDynLoad_EntryReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#gae2b55836ecc2f989e6f7511108dab393">OSDynLoad_EntryReason</a></td></tr>
 <tr class="separator:gae2b55836ecc2f989e6f7511108dab393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35507d5600161fb316369c67b696edd0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga35507d5600161fb316369c67b696edd0">OSDynLoad_NotifyReason</a></td></tr>
+<tr class="separator:ga35507d5600161fb316369c67b696edd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97992b91ae62ff354bfd15b28e76e989"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga97992b91ae62ff354bfd15b28e76e989">OSDynLoadNotifyFunc</a>) (<a class="el" href="group__coreinit__dynload.html#ga16bf6e0b644e2160e7d444483aa2daa6">OSDynLoad_Module</a> module, void *userContext, <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a> notifyReason, <a class="el" href="group__coreinit__dynload.html#structOSDynLoad__NotifyData">OSDynLoad_NotifyData</a> *infos)</td></tr>
+<tr class="separator:ga97992b91ae62ff354bfd15b28e76e989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -134,6 +138,13 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga49fab4b5016c916e35c068cd84ed5177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga544d75b95c681d433dd0d727cb6ada19"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a> { <br />
+&#160;&#160;<a class="el" href="group__coreinit__dynload.html#gga544d75b95c681d433dd0d727cb6ada19abb4e9fea8a1bcd1fcb821edca396e63e">OS_DYNLOAD_NOTIFY_UNLOADED</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__dynload.html#gga544d75b95c681d433dd0d727cb6ada19ad719921d1daeae231c1ffaf611e0096c">OS_DYNLOAD_NOTIFY_LOADED</a> = 1
+<br />
+ }</td></tr>
+<tr class="separator:ga544d75b95c681d433dd0d727cb6ada19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -167,6 +178,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1f72786564264fa953d8e0fe56f02c37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wut__types_8h.html#a975dbe9e4396bf9e0064ce01827fa372">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga1f72786564264fa953d8e0fe56f02c37">OSDynLoad_GetRPLInfo</a> (uint32_t first, uint32_t count, <a class="el" href="group__coreinit__dynload.html#structOSDynLoad__NotifyData">OSDynLoad_NotifyData</a> *outInfos)</td></tr>
 <tr class="memdesc:ga1f72786564264fa953d8e0fe56f02c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the currently loaded RPLs.  <a href="group__coreinit__dynload.html#ga1f72786564264fa953d8e0fe56f02c37">More...</a><br /></td></tr>
 <tr class="separator:ga1f72786564264fa953d8e0fe56f02c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee6b010bd25c1eb5d582640023842eb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__dynload.html#ga5245754f5bd591f3b573a45b1e856bf7">OSDynLoad_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#gaee6b010bd25c1eb5d582640023842eb0">OSDynLoad_IsModuleLoaded</a> (char const *name, <a class="el" href="group__coreinit__dynload.html#ga16bf6e0b644e2160e7d444483aa2daa6">OSDynLoad_Module</a> *outModule)</td></tr>
+<tr class="memdesc:gaee6b010bd25c1eb5d582640023842eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a module is already loaded.  <a href="group__coreinit__dynload.html#gaee6b010bd25c1eb5d582640023842eb0">More...</a><br /></td></tr>
+<tr class="separator:gaee6b010bd25c1eb5d582640023842eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f57735f91581e241e9c829f1aef1ca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__dynload.html#ga5245754f5bd591f3b573a45b1e856bf7">OSDynLoad_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga2f57735f91581e241e9c829f1aef1ca3">OSDynLoad_AddNotifyCallback</a> (<a class="el" href="group__coreinit__dynload.html#ga97992b91ae62ff354bfd15b28e76e989">OSDynLoadNotifyFunc</a> notifyFn, void *userContext)</td></tr>
+<tr class="memdesc:ga2f57735f91581e241e9c829f1aef1ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback that's called whenever a new .rpl is loaded or unloaded.  <a href="group__coreinit__dynload.html#ga2f57735f91581e241e9c829f1aef1ca3">More...</a><br /></td></tr>
+<tr class="separator:ga2f57735f91581e241e9c829f1aef1ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6238d9b6abd221d927f744ebf915a4c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__dynload.html#ga5245754f5bd591f3b573a45b1e856bf7">OSDynLoad_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga6238d9b6abd221d927f744ebf915a4c5">OSDynLoad_DelNotifyCallback</a> (<a class="el" href="group__coreinit__dynload.html#ga97992b91ae62ff354bfd15b28e76e989">OSDynLoadNotifyFunc</a> notifyFn, void *userContext)</td></tr>
+<tr class="memdesc:ga6238d9b6abd221d927f744ebf915a4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously added a callback.  <a href="group__coreinit__dynload.html#ga6238d9b6abd221d927f744ebf915a4c5">More...</a><br /></td></tr>
+<tr class="separator:ga6238d9b6abd221d927f744ebf915a4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71c20a7227a374607dc7cb569a7eb18d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__dynload.html#ga71c20a7227a374607dc7cb569a7eb18d">rpl_entry</a> (<a class="el" href="group__coreinit__dynload.html#ga16bf6e0b644e2160e7d444483aa2daa6">OSDynLoad_Module</a> module, <a class="el" href="group__coreinit__dynload.html#ga49fab4b5016c916e35c068cd84ed5177">OSDynLoad_EntryReason</a> reason)</td></tr>
 <tr class="memdesc:ga71c20a7227a374607dc7cb569a7eb18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The prototype for an RPL entry point.  <a href="group__coreinit__dynload.html#ga71c20a7227a374607dc7cb569a7eb18d">More...</a><br /></td></tr>
 <tr class="separator:ga71c20a7227a374607dc7cb569a7eb18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +365,36 @@ readSize</td>
 
 </div>
 </div>
+<a id="ga35507d5600161fb316369c67b696edd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35507d5600161fb316369c67b696edd0">&#9670;&nbsp;</a></span>OSDynLoad_NotifyReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a> <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97992b91ae62ff354bfd15b28e76e989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97992b91ae62ff354bfd15b28e76e989">&#9670;&nbsp;</a></span>OSDynLoadNotifyFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* OSDynLoadNotifyFunc) (<a class="el" href="group__coreinit__dynload.html#ga16bf6e0b644e2160e7d444483aa2daa6">OSDynLoad_Module</a> module, void *userContext, <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a> notifyReason, <a class="el" href="group__coreinit__dynload.html#structOSDynLoad__NotifyData">OSDynLoad_NotifyData</a> *infos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynload_8h_source.html#l00076">76</a> of file <a class="el" href="dynload_8h_source.html">dynload.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga5245754f5bd591f3b573a45b1e856bf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5245754f5bd591f3b573a45b1e856bf7">&#9670;&nbsp;</a></span>OSDynLoad_Error</h2>
@@ -391,6 +441,26 @@ readSize</td>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="dynload_8h_source.html#l00036">36</a> of file <a class="el" href="dynload_8h_source.html">dynload.h</a>.</p>
+
+</div>
+</div>
+<a id="ga544d75b95c681d433dd0d727cb6ada19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga544d75b95c681d433dd0d727cb6ada19">&#9670;&nbsp;</a></span>OSDynLoad_NotifyReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">OSDynLoad_NotifyReason</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga544d75b95c681d433dd0d727cb6ada19abb4e9fea8a1bcd1fcb821edca396e63e"></a>OS_DYNLOAD_NOTIFY_UNLOADED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga544d75b95c681d433dd0d727cb6ada19ad719921d1daeae231c1ffaf611e0096c"></a>OS_DYNLOAD_NOTIFY_LOADED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="dynload_8h_source.html#l00070">70</a> of file <a class="el" href="dynload_8h_source.html">dynload.h</a>.</p>
 
 </div>
 </div>
@@ -709,6 +779,98 @@ readSize</td>
   </dd>
 </dl>
 <p>Always returns FALSE on release versions of CafeOS. Requires OSGetSecurityLevel() &gt; 0. </p>
+
+</div>
+</div>
+<a id="gaee6b010bd25c1eb5d582640023842eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee6b010bd25c1eb5d582640023842eb0">&#9670;&nbsp;</a></span>OSDynLoad_IsModuleLoaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__coreinit__dynload.html#ga5245754f5bd591f3b573a45b1e856bf7">OSDynLoad_Error</a> OSDynLoad_IsModuleLoaded </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__coreinit__dynload.html#ga16bf6e0b644e2160e7d444483aa2daa6">OSDynLoad_Module</a> *&#160;</td>
+          <td class="paramname"><em>outModule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a module is already loaded. </p>
+<p>Does not load any modules.</p>
+<p>Returns OS_DYNLOAD_OK on success. </p>
+
+</div>
+</div>
+<a id="ga2f57735f91581e241e9c829f1aef1ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f57735f91581e241e9c829f1aef1ca3">&#9670;&nbsp;</a></span>OSDynLoad_AddNotifyCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__coreinit__dynload.html#ga5245754f5bd591f3b573a45b1e856bf7">OSDynLoad_Error</a> OSDynLoad_AddNotifyCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__dynload.html#ga97992b91ae62ff354bfd15b28e76e989">OSDynLoadNotifyFunc</a>&#160;</td>
+          <td class="paramname"><em>notifyFn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a callback that's called whenever a new .rpl is loaded or unloaded. </p>
+
+</div>
+</div>
+<a id="ga6238d9b6abd221d927f744ebf915a4c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6238d9b6abd221d927f744ebf915a4c5">&#9670;&nbsp;</a></span>OSDynLoad_DelNotifyCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__coreinit__dynload.html#ga5245754f5bd591f3b573a45b1e856bf7">OSDynLoad_Error</a> OSDynLoad_DelNotifyCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__dynload.html#ga97992b91ae62ff354bfd15b28e76e989">OSDynLoadNotifyFunc</a>&#160;</td>
+          <td class="paramname"><em>notifyFn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a previously added a callback. </p>
 
 </div>
 </div>

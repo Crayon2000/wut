@@ -1,5 +1,6 @@
 <map id="nsysnet" name="nsysnet">
-<area shape="rect" id="node1" title="Network functions." alt="" coords="5,31,79,56"/>
+<area shape="rect" id="node1" title="Network functions." alt="" coords="5,55,79,80"/>
 <area shape="rect" id="node2" href="$group__nsysnet__socket.html" title=" " alt="" coords="148,5,213,31"/>
-<area shape="rect" id="node3" href="$group__nsysnet__nssl.html" title=" " alt="" coords="127,55,235,80"/>
+<area shape="rect" id="node3" href="$group__nsysnet__netdb.html" title=" " alt="" coords="150,55,211,80"/>
+<area shape="rect" id="node4" href="$group__nsysnet__nssl.html" title=" " alt="" coords="127,104,235,129"/>
 </map>

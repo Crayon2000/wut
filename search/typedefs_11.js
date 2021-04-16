@@ -1,11 +1,24 @@
 var searchData=
 [
-  ['ucasynccallbackfn_6835',['UCAsyncCallbackFn',['../group__coreinit__userconfig.html#ga96bc72ab26fdc73207754ed18cb878fa',1,'userconfig.h']]],
-  ['ucasyncparams_6836',['UCAsyncParams',['../group__coreinit__userconfig.html#gae4cc9dc6333bbbc943301d42a5e45aef',1,'userconfig.h']]],
-  ['uccommand_6837',['UCCommand',['../group__coreinit__userconfig.html#gaffed08ab7569d3e62badc0c40c96b3a2',1,'userconfig.h']]],
-  ['ucdatatype_6838',['UCDataType',['../group__coreinit__userconfig.html#ga0d28513da399ace453e31eb0e3ab9582',1,'userconfig.h']]],
-  ['ucerror_6839',['UCError',['../group__coreinit__userconfig.html#ga7da1d7830dddbf4ea81b2a83bc7956e4',1,'userconfig.h']]],
-  ['ucerrors_6840',['UCErrors',['../group__coreinit__userconfig.html#gaa716f6801fd77a79669a77de4ab714dc',1,'userconfig.h']]],
-  ['ucfilesys_6841',['UCFileSys',['../group__coreinit__userconfig.html#ga4e2647fa583c5b5640d8fde3dee08327',1,'userconfig.h']]],
-  ['ucsysconfig_6842',['UCSysConfig',['../group__coreinit__userconfig.html#gacadd060de40446d3c010689f85d91afd',1,'userconfig.h']]]
+  ['ucasynccallbackfn_7409',['UCAsyncCallbackFn',['../group__coreinit__userconfig.html#ga96bc72ab26fdc73207754ed18cb878fa',1,'userconfig.h']]],
+  ['ucasyncparams_7410',['UCAsyncParams',['../group__coreinit__userconfig.html#gae4cc9dc6333bbbc943301d42a5e45aef',1,'userconfig.h']]],
+  ['uccommand_7411',['UCCommand',['../group__coreinit__userconfig.html#gaffed08ab7569d3e62badc0c40c96b3a2',1,'userconfig.h']]],
+  ['ucdatatype_7412',['UCDataType',['../group__coreinit__userconfig.html#ga0d28513da399ace453e31eb0e3ab9582',1,'userconfig.h']]],
+  ['ucerror_7413',['UCError',['../group__coreinit__userconfig.html#ga7da1d7830dddbf4ea81b2a83bc7956e4',1,'userconfig.h']]],
+  ['ucerrors_7414',['UCErrors',['../group__coreinit__userconfig.html#gaa716f6801fd77a79669a77de4ab714dc',1,'userconfig.h']]],
+  ['ucfilesys_7415',['UCFileSys',['../group__coreinit__userconfig.html#ga4e2647fa583c5b5640d8fde3dee08327',1,'userconfig.h']]],
+  ['ucsysconfig_7416',['UCSysConfig',['../group__coreinit__userconfig.html#gacadd060de40446d3c010689f85d91afd',1,'userconfig.h']]],
+  ['uhsacquireinterfacecallback_7417',['UhsAcquireInterfaceCallback',['../uhs_8h.html#afdb08fd16205545b75e3022e7f63533a',1,'uhs.h']]],
+  ['uhsconfig_7418',['UhsConfig',['../uhs_8h.html#a1ccee0fb36675432c5b587f991c496eb',1,'uhs.h']]],
+  ['uhsconfigdescriptor_7419',['UhsConfigDescriptor',['../uhs__usbspec_8h.html#a8457bea939648a09d0e3e243e96e7261',1,'uhs_usbspec.h']]],
+  ['uhsdevicedescriptor_7420',['UhsDeviceDescriptor',['../uhs__usbspec_8h.html#ac642112a20ecda9abc53de5a0ea825bf',1,'uhs_usbspec.h']]],
+  ['uhsdrvregcallback_7421',['UHSDrvRegCallback',['../uhs_8h.html#a7f1daa4ce82613c54cad00010fea1e69',1,'uhs.h']]],
+  ['uhsendpointdescriptor_7422',['UhsEndpointDescriptor',['../uhs_8h.html#ab2970d1f27e2b97acc3f657d508538bf',1,'uhs.h']]],
+  ['uhshandle_7423',['UhsHandle',['../uhs_8h.html#a332135e333f6749dff81b957591acfdc',1,'uhs.h']]],
+  ['uhshandlestate_7424',['UHSHandleState',['../uhs_8h.html#a56f7cf8f5e82032df6269a31e21f96f9',1,'uhs.h']]],
+  ['uhsinterfacedescriptor_7425',['UhsInterfaceDescriptor',['../uhs__usbspec_8h.html#a6037ada1e4fac8e3c6271914bc5f98ee',1,'uhs_usbspec.h']]],
+  ['uhsinterfacefilter_7426',['UhsInterfaceFilter',['../uhs_8h.html#a6e58abe64af900fe4302eb65f2cb4c26',1,'uhs.h']]],
+  ['uhsinterfaceprofile_7427',['UhsInterfaceProfile',['../uhs_8h.html#a7890fd5ff1a494e92229863f9847e9b3',1,'uhs.h']]],
+  ['uhssetuppacket_7428',['UhsSetupPacket',['../uhs__usbspec_8h.html#aa65df3ffe157e215b0ae9043b38c4618',1,'uhs_usbspec.h']]],
+  ['uhsstatus_7429',['UHSStatus',['../uhs_8h.html#ad57fad4b48ea3ba171d6ea76d9ec7c92',1,'uhs.h']]]
 ];

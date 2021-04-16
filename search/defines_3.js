@@ -1,10 +1,20 @@
 var searchData=
 [
-  ['httppost_5fbuffer_8784',['HTTPPOST_BUFFER',['../curl_8h.html#af8f32e09b4f89edf57c763dff0eaf39e',1,'curl.h']]],
-  ['httppost_5fcallback_8785',['HTTPPOST_CALLBACK',['../curl_8h.html#a627323fd2b367b08f01a417cd996aa06',1,'curl.h']]],
-  ['httppost_5ffilename_8786',['HTTPPOST_FILENAME',['../curl_8h.html#a1902b6e96f01aaaed3180714df4faef4',1,'curl.h']]],
-  ['httppost_5fptrbuffer_8787',['HTTPPOST_PTRBUFFER',['../curl_8h.html#a6cee088e31c4d14204d6788e79047493',1,'curl.h']]],
-  ['httppost_5fptrcontents_8788',['HTTPPOST_PTRCONTENTS',['../curl_8h.html#a2cba177058c75264d396b0f4b3b6886f',1,'curl.h']]],
-  ['httppost_5fptrname_8789',['HTTPPOST_PTRNAME',['../curl_8h.html#a152dd38815c2d61ccf8e6cfe454c81c2',1,'curl.h']]],
-  ['httppost_5freadfile_8790',['HTTPPOST_READFILE',['../curl_8h.html#a9f5ad2d20687360fd9cf86b7c6887d86',1,'curl.h']]]
+  ['eai_5faddrfamily_9528',['EAI_ADDRFAMILY',['../netdb_8h.html#aac746f03bb5099da0a427a99ecf1e36a',1,'netdb.h']]],
+  ['eai_5fagain_9529',['EAI_AGAIN',['../netdb_8h.html#a7a0f2f10f8778fe201a68932d18434e5',1,'netdb.h']]],
+  ['eai_5fbadflags_9530',['EAI_BADFLAGS',['../netdb_8h.html#a3f3b38f2ac6688612a0fd20f3e6210be',1,'netdb.h']]],
+  ['eai_5fbadhints_9531',['EAI_BADHINTS',['../netdb_8h.html#a06480e6a72c58c6649d2ad19c98bff27',1,'netdb.h']]],
+  ['eai_5ffail_9532',['EAI_FAIL',['../netdb_8h.html#acfc712115bf29357d33472da2209dc15',1,'netdb.h']]],
+  ['eai_5ffamily_9533',['EAI_FAMILY',['../netdb_8h.html#a1d195add54c14a8903441848fb2f7da6',1,'netdb.h']]],
+  ['eai_5fmax_9534',['EAI_MAX',['../netdb_8h.html#afcb75b949ba49308678186c339c78fdc',1,'netdb.h']]],
+  ['eai_5fmemory_9535',['EAI_MEMORY',['../netdb_8h.html#a33d8eb0c89167f95dcdaf23386631174',1,'netdb.h']]],
+  ['eai_5fnodata_9536',['EAI_NODATA',['../netdb_8h.html#aae1a32f26ffbb7461251d7c4a7c3a0a2',1,'netdb.h']]],
+  ['eai_5fnoname_9537',['EAI_NONAME',['../netdb_8h.html#a0bb00f48d6ba1e8c55b7d85c8e3a19a7',1,'netdb.h']]],
+  ['eai_5foverflow_9538',['EAI_OVERFLOW',['../netdb_8h.html#a01d6798d308152b919a0b9f998bbd336',1,'netdb.h']]],
+  ['eai_5fprotocol_9539',['EAI_PROTOCOL',['../netdb_8h.html#ac22bd096438839c946a37c0619c6eabf',1,'netdb.h']]],
+  ['eai_5fservice_9540',['EAI_SERVICE',['../netdb_8h.html#ac7f08e3ee3c38f7c869beb5a44c9f651',1,'netdb.h']]],
+  ['eai_5fsocktype_9541',['EAI_SOCKTYPE',['../netdb_8h.html#a110777c2c99dab32101324b3b1dd1df5',1,'netdb.h']]],
+  ['eai_5fsystem_9542',['EAI_SYSTEM',['../netdb_8h.html#a8e864fa95f26341c27127deb6237c88c',1,'netdb.h']]],
+  ['endpoint_5ftransfer_5fin_9543',['ENDPOINT_TRANSFER_IN',['../uhs_8h.html#a117cfa510f355a71c711d117dfe18460',1,'uhs.h']]],
+  ['endpoint_5ftransfer_5fout_9544',['ENDPOINT_TRANSFER_OUT',['../uhs_8h.html#a146b35480e491660a2b9f106485125c4',1,'uhs.h']]]
 ];

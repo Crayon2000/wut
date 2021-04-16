@@ -83,18 +83,130 @@ Collaboration diagram for Nintendo SSL:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga796867529861c8c8f2e4bdc7e442562e"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a></td></tr>
+<tr class="memdesc:ga796867529861c8c8f2e4bdc7e442562e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An NSSL library return code.  <a href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">More...</a><br /></td></tr>
+<tr class="separator:ga796867529861c8c8f2e4bdc7e442562e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae46155a7e0f590af119edb140d974cb1"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a></td></tr>
 <tr class="memdesc:gae46155a7e0f590af119edb140d974cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to a NSSL context created with <a class="el" href="group__nsysnet__nssl.html#gafd4a0686315bd9f7a4c99ece33cb74c8" title="Creates a context to use with the NSSL library.">NSSLCreateContext()</a>.  <a href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">More...</a><br /></td></tr>
 <tr class="separator:gae46155a7e0f590af119edb140d974cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79622287731ba9edbbcc5a7a21ad2c54"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a></td></tr>
 <tr class="memdesc:ga79622287731ba9edbbcc5a7a21ad2c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to a NSSL connection created with <a class="el" href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4" title="Open an SSL connection.">NSSLCreateConnection()</a>.  <a href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">More...</a><br /></td></tr>
 <tr class="separator:ga79622287731ba9edbbcc5a7a21ad2c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a2e474a4a2245a2ef919051d79d4340"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__nsysnet__nssl.html#ga2f185129b6c0e8ba140e23c79d2bbb1a">NSSLErrors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga0a2e474a4a2245a2ef919051d79d4340">NSSLErrors</a></td></tr>
+<tr class="memdesc:ga0a2e474a4a2245a2ef919051d79d4340"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of errors returned by the NSSL library.  <a href="group__nsysnet__nssl.html#ga0a2e474a4a2245a2ef919051d79d4340">More...</a><br /></td></tr>
+<tr class="separator:ga0a2e474a4a2245a2ef919051d79d4340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8a0f48711dabdd5c7e01a18ddeeaf95"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__nsysnet__nssl.html#ga38586a4d6115d2c6486aafefaf4fc162">NSSLServerCertId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gaa8a0f48711dabdd5c7e01a18ddeeaf95">NSSLServerCertId</a></td></tr>
 <tr class="memdesc:gaa8a0f48711dabdd5c7e01a18ddeeaf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IDs of a system CA.  <a href="group__nsysnet__nssl.html#gaa8a0f48711dabdd5c7e01a18ddeeaf95">More...</a><br /></td></tr>
 <tr class="separator:gaa8a0f48711dabdd5c7e01a18ddeeaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga2f185129b6c0e8ba140e23c79d2bbb1a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga2f185129b6c0e8ba140e23c79d2bbb1a">NSSLErrors</a> { <br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aadae2288f8c1d13099920648bdb2f202f">NSSL_ERROR_OK</a> = 0x0, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aad33995851a115be8716b7068efe44f4a">NSSL_ERROR_GENERIC</a> = -0x1, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa79cc51df7929948b7f2f4547eac86767">NSSL_ERROR_INVALID_NSSL_CONTEXT</a> = -0x280001, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aac0a66a6fcd7ae3e367b97e1cdb98adad">NSSL_ERROR_INVALID_CERT_ID</a> = -0x280002, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa040a9669ad91d882b86a622eb8d86830">NSSL_ERROR_CERT_LIMIT</a> = -0x280003, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aad8edfadb69f65ea674da43be35b237ef">NSSL_ERROR_INVALID_NSSL_CONNECTION</a> = -0x280004, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa36afa97f7edb717f4e581b6507ffb21d">NSSL_ERROR_INVALID_CERT</a> = -0x280005, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aad30992ac17690d8a3d30c7f715192fed">NSSL_ERROR_ZERO_RETURN</a> = -0x280006, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa7d6d6699ced617d637cb4ee37f989a9b">NSSL_ERROR_WANT_READ</a> = -0x280007, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa40a367a43350890277dd2b79cc232e87">NSSL_ERROR_WANT_WRITE</a> = -0x280008, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa64dee871252782cfef1a7c1b7454162a">NSSL_ERROR_IO_ERROR</a> = -0x280009, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa9286bc70e0733b53f5368ed98799a6ef">NSSL_ERROR_NSSL_LIB_ERROR</a> = -0x28000a, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aafed8749c7eceb8eb30d6fb7415229fe7">NSSL_ERROR_UNKNOWN</a> = -0x28000b, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa5e7d5944d1ae0f1205ba887465a5d776">NSSL_ERROR_OUT_OF_MEMORY</a> = -0x28000c, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa17a30bb7c1f267ea1925368a011683da">NSSL_ERROR_INVALID_STATE</a> = -0x28000d, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa65de062d687f0158ef6e5efa31da0fb5">NSSL_ERROR_HANDSHAKE_ERROR</a> = -0x28000e, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa8494923dc8d30ec91965becb1908e02a">NSSL_ERROR_NO_CERT</a> = -0x28000f, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aac7a6d492af69f75dd05f5af5a0d5f95a">NSSL_ERROR_INVALID_FD</a> = -0x280010, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa4e2271ae2fe8673236f4c458f583d31a">NSSL_ERROR_LIB_NOT_READY</a> = -0x280011, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa7ce9a9eb3ffe80c6b7b5bd2032509364">NSSL_ERROR_IPC_ERROR</a> = -0x280012, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aab31ddadff0c189daef3c9b661436d10f">NSSL_ERROR_RESOURCE_LIMIT</a> = -0x280013, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa32af0175484ffb68ebec63d7a570e853">NSSL_ERROR_INVALID_HANDLE</a> = -0x280014, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aacdba7340fd6b4406c723f1720ea347d7">NSSL_ERROR_INVALID_CERT_TYPE</a> = -0x280015, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aaf22e3607338d108be482d70c139f0251">NSSL_ERROR_INVALID_KEY_TYPE</a> = -0x280016, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aafd96e5fcadad28708a463f795d7d0df1">NSSL_ERROR_INVALID_SIZE</a> = -0x280017, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa45d6cad73ac68f1a4505d6d30d479f7b">NSSL_ERROR_NO_PEER_CERT</a> = -0x280018, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aac9bd172dd15fb2966d7a2da8fbc491ad">NSSL_ERROR_INSUFFICIENT_SIZE</a> = -0x280019, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa6a0c0c51172ae396844eb2baeba2ceb7">NSSL_ERROR_NO_CIPHER</a> = -0x28001a, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aac10aafbac076e6e9cd3e5f814287a97b">NSSL_ERROR_INVALID_ARG</a> = -0x28001b, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa9beb070416d0056d74fddbf30ca8b5b0">NSSL_ERROR_INVALID_NSSL_SESSION</a> = -0x28001c, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa45da30345bc77328bb197fcb106fee37">NSSL_ERROR_NO_SESSION</a> = -0x28001d, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa045f7e37abec6614fbe16cde370a287d">NSSL_ERROR_SSL_SHUTDOWN_ERROR</a> = -0x28001e, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa89314922723759dcbd0b1e557cfbbe18">NSSL_ERROR_CERT_SIZE_LIMIT</a> = -0x28001f, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aabfc00d91d977e419ff302f3f5d28df7c">NSSL_ERROR_CERT_NO_ACCESS</a> = -0x280020, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa4dce924a541144c55ce27c4f7ac35408">NSSL_ERROR_INVALID_CERT_ID2</a> = -0x280021, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aafea0bedbe8d4490fca8e963f2d043843">NSSL_ERROR_CERT_READ_ERROR</a> = -0x280022, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa5a42a3e92af82129cfa8af48bd59f7cc">NSSL_ERROR_CERT_STORE_INIT_FAILURE</a> = -0x280023, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aaf38c3e765ba7e7bf42e0a5a18dbfa798">NSSL_ERROR_INVALID_CERT_ENCODING</a> = -0x280024, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa21bd62d7ffaed16ba9e79f172dca08bd">NSSL_ERROR_CERT_STORE_ERROR</a> = -0x280025, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa414950b105dd7f0c8b9b6158e2c804a7">NSSL_ERROR_PRIVATE_KEY_READ_ERROR</a> = -0x280026, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa158b457cc47c0921f01e67b7c0422091">NSSL_ERROR_INVALID_PRIVATE_KEY</a> = -0x280027, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa99d07571ce48be89f2ac56646093d114">NSSL_ERROR_NOT_READY</a> = -0x280028, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aaa46b9a0998c8070d02eba1c7d9d62d98">NSSL_ERROR_ENCRYPTION_ERROR</a> = -0x280029, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa901b0bdbca6a3cb0091600717a27eb14">NSSL_ERROR_NO_CERT_STORE</a> = -0x28002a, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aaeae2152f1a8796715b52a52b4cc4c5a3">NSSL_ERROR_PRIVATE_KEY_SIZE_LIMIT</a> = -0x28002b, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aabedf37abbc7bf57c5a529de1d8525379">NSSL_ERROR_PROCESS_MAX_EXT_CERTS</a> = -0x28002c, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aaab5ee271f3c0fa5cdceb3f877fde9878">NSSL_ERROR_PROCESS_MAX_CONTEXTS</a> = -0x28002d, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa80d98a434c76f901d4f5a92a6c08093a">NSSL_ERROR_PROCESS_MAX_CONNECTIONS</a> = -0x28002e, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa44d7d7422fd118b75b2991c602429131">NSSL_ERROR_CERT_NOT_EXPORTABLE</a> = -0x28002f, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aadc124f2cc4f03aaf4f04ea3ebf6c1241">NSSL_ERROR_INVALID_CERT_SIZE</a> = -0x280030, 
+<br />
+&#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga2f185129b6c0e8ba140e23c79d2bbb1aa5bb7b0422af9383d211b0553ab8214cb">NSSL_ERROR_INVALID_KEY_SIZE</a> = -0x280031
+<br />
+ }</td></tr>
+<tr class="memdesc:ga2f185129b6c0e8ba140e23c79d2bbb1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of errors returned by the NSSL library.  <a href="group__nsysnet__nssl.html#ga2f185129b6c0e8ba140e23c79d2bbb1a">More...</a><br /></td></tr>
+<tr class="separator:ga2f185129b6c0e8ba140e23c79d2bbb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38586a4d6115d2c6486aafefaf4fc162"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga38586a4d6115d2c6486aafefaf4fc162">NSSLServerCertId</a> { <br />
 &#160;&#160;<a class="el" href="group__nsysnet__nssl.html#gga38586a4d6115d2c6486aafefaf4fc162a44764410cad55e71de7b54b1ef27396e">NSSL_SERVER_CERT_GROUP_NINTENDO_FIRST</a> = 100, 
 <br />
@@ -196,41 +308,59 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga271f6d02a5a17553605ee6f4c5d92201"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga271f6d02a5a17553605ee6f4c5d92201">NSSLInit</a> ()</td></tr>
-<tr class="memdesc:ga271f6d02a5a17553605ee6f4c5d92201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises the NSSL library for use.  <a href="group__nsysnet__nssl.html#ga271f6d02a5a17553605ee6f4c5d92201">More...</a><br /></td></tr>
-<tr class="separator:ga271f6d02a5a17553605ee6f4c5d92201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd6dd47f0a2f3698fd07c3336119fd60"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gabd6dd47f0a2f3698fd07c3336119fd60">NSSLFinish</a> ()</td></tr>
-<tr class="memdesc:gabd6dd47f0a2f3698fd07c3336119fd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up and finishes use of the NSSL library.  <a href="group__nsysnet__nssl.html#gabd6dd47f0a2f3698fd07c3336119fd60">More...</a><br /></td></tr>
-<tr class="separator:gabd6dd47f0a2f3698fd07c3336119fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61fafbd97e241f74a18eecdca88e8119"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga61fafbd97e241f74a18eecdca88e8119">NSSLInit</a> ()</td></tr>
+<tr class="memdesc:ga61fafbd97e241f74a18eecdca88e8119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises the NSSL library for use.  <a href="group__nsysnet__nssl.html#ga61fafbd97e241f74a18eecdca88e8119">More...</a><br /></td></tr>
+<tr class="separator:ga61fafbd97e241f74a18eecdca88e8119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bfc3fcac80a11f8f3fc0d0920da608e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga8bfc3fcac80a11f8f3fc0d0920da608e">NSSLFinish</a> ()</td></tr>
+<tr class="memdesc:ga8bfc3fcac80a11f8f3fc0d0920da608e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up and finishes use of the NSSL library.  <a href="group__nsysnet__nssl.html#ga8bfc3fcac80a11f8f3fc0d0920da608e">More...</a><br /></td></tr>
+<tr class="separator:ga8bfc3fcac80a11f8f3fc0d0920da608e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd4a0686315bd9f7a4c99ece33cb74c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gafd4a0686315bd9f7a4c99ece33cb74c8">NSSLCreateContext</a> (int32_t unk)</td></tr>
 <tr class="memdesc:gafd4a0686315bd9f7a4c99ece33cb74c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a context to use with the NSSL library.  <a href="group__nsysnet__nssl.html#gafd4a0686315bd9f7a4c99ece33cb74c8">More...</a><br /></td></tr>
 <tr class="separator:gafd4a0686315bd9f7a4c99ece33cb74c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2287e2c1ecb34493a1a3fe3359cc5ed1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga2287e2c1ecb34493a1a3fe3359cc5ed1">NSSLDestroyContext</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context)</td></tr>
-<tr class="memdesc:ga2287e2c1ecb34493a1a3fe3359cc5ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a NSSL context.  <a href="group__nsysnet__nssl.html#ga2287e2c1ecb34493a1a3fe3359cc5ed1">More...</a><br /></td></tr>
-<tr class="separator:ga2287e2c1ecb34493a1a3fe3359cc5ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae26bc46ca42f79c3140119374c40cea5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gae26bc46ca42f79c3140119374c40cea5">NSSLAddServerPKIExternal</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context, const void *cert, int32_t length, int32_t unk)</td></tr>
-<tr class="memdesc:gae26bc46ca42f79c3140119374c40cea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom root CA to the given NSSL context.  <a href="group__nsysnet__nssl.html#gae26bc46ca42f79c3140119374c40cea5">More...</a><br /></td></tr>
-<tr class="separator:gae26bc46ca42f79c3140119374c40cea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29af65684bb6a2a238998b1282e9be1b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga29af65684bb6a2a238998b1282e9be1b">NSSLAddServerPKI</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context, <a class="el" href="group__nsysnet__nssl.html#ga38586a4d6115d2c6486aafefaf4fc162">NSSLServerCertId</a> pki)</td></tr>
-<tr class="memdesc:ga29af65684bb6a2a238998b1282e9be1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a system root CA (one of <a class="el" href="group__nsysnet__nssl.html#ga38586a4d6115d2c6486aafefaf4fc162" title="The IDs of a system CA.">NSSLServerCertId</a>) to the given NSSL context.  <a href="group__nsysnet__nssl.html#ga29af65684bb6a2a238998b1282e9be1b">More...</a><br /></td></tr>
-<tr class="separator:ga29af65684bb6a2a238998b1282e9be1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6980469997f47e7f9712b549f807bfe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4">NSSLCreateConnection</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context, const char *host, int32_t hostLength, int32_t options, int32_t <a class="el" href="group__nsysnet__socket.html#gaf4e0711877c45a41168ac677b0670ccd">socket</a>, int32_t block)</td></tr>
+<tr class="memitem:ga13ad242dcc1830f8f0f30f0166958a95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga13ad242dcc1830f8f0f30f0166958a95">NSSLDestroyContext</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context)</td></tr>
+<tr class="memdesc:ga13ad242dcc1830f8f0f30f0166958a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a NSSL context.  <a href="group__nsysnet__nssl.html#ga13ad242dcc1830f8f0f30f0166958a95">More...</a><br /></td></tr>
+<tr class="separator:ga13ad242dcc1830f8f0f30f0166958a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5e52dcc05808addd9355bfc927111c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gac5e52dcc05808addd9355bfc927111c4">NSSLAddServerPKIExternal</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context, const void *cert, int32_t length, int32_t unk)</td></tr>
+<tr class="memdesc:gac5e52dcc05808addd9355bfc927111c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom root CA to the given NSSL context.  <a href="group__nsysnet__nssl.html#gac5e52dcc05808addd9355bfc927111c4">More...</a><br /></td></tr>
+<tr class="separator:gac5e52dcc05808addd9355bfc927111c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f7c3c98435f289106de429ec2d0ccef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga2f7c3c98435f289106de429ec2d0ccef">NSSLAddServerPKI</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context, <a class="el" href="group__nsysnet__nssl.html#ga38586a4d6115d2c6486aafefaf4fc162">NSSLServerCertId</a> pki)</td></tr>
+<tr class="memdesc:ga2f7c3c98435f289106de429ec2d0ccef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a system root CA (one of <a class="el" href="group__nsysnet__nssl.html#ga38586a4d6115d2c6486aafefaf4fc162" title="The IDs of a system CA.">NSSLServerCertId</a>) to the given NSSL context.  <a href="group__nsysnet__nssl.html#ga2f7c3c98435f289106de429ec2d0ccef">More...</a><br /></td></tr>
+<tr class="separator:ga2f7c3c98435f289106de429ec2d0ccef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6980469997f47e7f9712b549f807bfe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4">NSSLCreateConnection</a> (<a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a> context, const char *host, int32_t hostLength, int32_t options, int32_t <a class="el" href="sys_2socket_8h.html#af4e0711877c45a41168ac677b0670ccd">socket</a>, int32_t block)</td></tr>
 <tr class="memdesc:ga6980469997f47e7f9712b549f807bfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an SSL connection.  <a href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4">More...</a><br /></td></tr>
 <tr class="separator:ga6980469997f47e7f9712b549f807bfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga086f2b4473940cc47f13085184ecdb88"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga086f2b4473940cc47f13085184ecdb88">NSSLDestroyConnection</a> (<a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a> connection)</td></tr>
-<tr class="memdesc:ga086f2b4473940cc47f13085184ecdb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close and destroy a NSSL connection.  <a href="group__nsysnet__nssl.html#ga086f2b4473940cc47f13085184ecdb88">More...</a><br /></td></tr>
-<tr class="separator:ga086f2b4473940cc47f13085184ecdb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b734c16fb0ed64d42ae11cc2c583410"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga6b734c16fb0ed64d42ae11cc2c583410">NSSLRead</a> (<a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a> connection, const void *buffer, int32_t length, int32_t *outBytesRead)</td></tr>
-<tr class="memdesc:ga6b734c16fb0ed64d42ae11cc2c583410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from an open NSSL connection into a given buffer.  <a href="group__nsysnet__nssl.html#ga6b734c16fb0ed64d42ae11cc2c583410">More...</a><br /></td></tr>
-<tr class="separator:ga6b734c16fb0ed64d42ae11cc2c583410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4f9fc85ec4f365aae566cb5205fcd91"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gac4f9fc85ec4f365aae566cb5205fcd91">NSSLWrite</a> (<a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a> connection, const void *buffer, int32_t length, int32_t *outBytesWritten)</td></tr>
-<tr class="memdesc:gac4f9fc85ec4f365aae566cb5205fcd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to an open NSSL connection from a given buffer.  <a href="group__nsysnet__nssl.html#gac4f9fc85ec4f365aae566cb5205fcd91">More...</a><br /></td></tr>
-<tr class="separator:gac4f9fc85ec4f365aae566cb5205fcd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9becac4ae0d499c5f336364e50aa29a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gab9becac4ae0d499c5f336364e50aa29a">NSSLDestroyConnection</a> (<a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a> connection)</td></tr>
+<tr class="memdesc:gab9becac4ae0d499c5f336364e50aa29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close and destroy a NSSL connection.  <a href="group__nsysnet__nssl.html#gab9becac4ae0d499c5f336364e50aa29a">More...</a><br /></td></tr>
+<tr class="separator:gab9becac4ae0d499c5f336364e50aa29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c28745fa874a6a3b76d48205f5f4ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#ga1c28745fa874a6a3b76d48205f5f4ca7">NSSLRead</a> (<a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a> connection, const void *buffer, int32_t length, int32_t *outBytesRead)</td></tr>
+<tr class="memdesc:ga1c28745fa874a6a3b76d48205f5f4ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from an open NSSL connection into a given buffer.  <a href="group__nsysnet__nssl.html#ga1c28745fa874a6a3b76d48205f5f4ca7">More...</a><br /></td></tr>
+<tr class="separator:ga1c28745fa874a6a3b76d48205f5f4ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2905562f52320355f8ae7dd13d095ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__nssl.html#gaf2905562f52320355f8ae7dd13d095ab">NSSLWrite</a> (<a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a> connection, const void *buffer, int32_t length, int32_t *outBytesWritten)</td></tr>
+<tr class="memdesc:gaf2905562f52320355f8ae7dd13d095ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to an open NSSL connection from a given buffer.  <a href="group__nsysnet__nssl.html#gaf2905562f52320355f8ae7dd13d095ab">More...</a><br /></td></tr>
+<tr class="separator:gaf2905562f52320355f8ae7dd13d095ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The NSSL library is Nintendo's interface for making SSL connections on the Wii U. To use NSSL directly, call <a class="el" href="group__nsysnet__nssl.html#ga271f6d02a5a17553605ee6f4c5d92201" title="Initialises the NSSL library for use.">NSSLInit()</a> then <a class="el" href="group__nsysnet__nssl.html#gafd4a0686315bd9f7a4c99ece33cb74c8" title="Creates a context to use with the NSSL library.">NSSLCreateContext()</a> to create a context. This context - after adding root CAs via <a class="el" href="group__nsysnet__nssl.html#ga29af65684bb6a2a238998b1282e9be1b" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a> or <a class="el" href="group__nsysnet__nssl.html#gae26bc46ca42f79c3140119374c40cea5" title="Add a custom root CA to the given NSSL context.">NSSLAddServerPKIExternal()</a> - can be used to create connections (<a class="el" href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4" title="Open an SSL connection.">NSSLCreateConnection()</a>) that can transfer data using <a class="el" href="group__nsysnet__nssl.html#ga6b734c16fb0ed64d42ae11cc2c583410" title="Read data from an open NSSL connection into a given buffer.">NSSLRead()</a> and <a class="el" href="group__nsysnet__nssl.html#gac4f9fc85ec4f365aae566cb5205fcd91" title="Write data to an open NSSL connection from a given buffer.">NSSLWrite()</a>.</p>
+<p>The NSSL library is Nintendo's interface for making SSL connections on the Wii U. To use NSSL directly, call <a class="el" href="group__nsysnet__nssl.html#ga61fafbd97e241f74a18eecdca88e8119" title="Initialises the NSSL library for use.">NSSLInit()</a> then <a class="el" href="group__nsysnet__nssl.html#gafd4a0686315bd9f7a4c99ece33cb74c8" title="Creates a context to use with the NSSL library.">NSSLCreateContext()</a> to create a context. This context - after adding root CAs via <a class="el" href="group__nsysnet__nssl.html#ga2f7c3c98435f289106de429ec2d0ccef" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a> or <a class="el" href="group__nsysnet__nssl.html#gac5e52dcc05808addd9355bfc927111c4" title="Add a custom root CA to the given NSSL context.">NSSLAddServerPKIExternal()</a> - can be used to create connections (<a class="el" href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4" title="Open an SSL connection.">NSSLCreateConnection()</a>) that can transfer data using <a class="el" href="group__nsysnet__nssl.html#ga1c28745fa874a6a3b76d48205f5f4ca7" title="Read data from an open NSSL connection into a given buffer.">NSSLRead()</a> and <a class="el" href="group__nsysnet__nssl.html#gaf2905562f52320355f8ae7dd13d095ab" title="Write data to an open NSSL connection from a given buffer.">NSSLWrite()</a>.</p>
 <p>For HTTPS connections, consider using nlibcurl. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga796867529861c8c8f2e4bdc7e442562e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga796867529861c8c8f2e4bdc7e442562e">&#9670;&nbsp;</a></span>NSSLError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t <a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An NSSL library return code. </p>
+
+<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00028">28</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
+
+</div>
+</div>
 <a id="gae46155a7e0f590af119edb140d974cb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae46155a7e0f590af119edb140d974cb1">&#9670;&nbsp;</a></span>NSSLContextHandle</h2>
 
@@ -245,7 +375,7 @@ Functions</h2></td></tr>
 
 <p>A handle to a NSSL context created with <a class="el" href="group__nsysnet__nssl.html#gafd4a0686315bd9f7a4c99ece33cb74c8" title="Creates a context to use with the NSSL library.">NSSLCreateContext()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00028">28</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00030">30</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +393,23 @@ Functions</h2></td></tr>
 
 <p>A handle to a NSSL connection created with <a class="el" href="group__nsysnet__nssl.html#ga6980469997f47e7f9712b549f807bfe4" title="Open an SSL connection.">NSSLCreateConnection()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00030">30</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00032">32</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
+
+</div>
+</div>
+<a id="ga0a2e474a4a2245a2ef919051d79d4340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a2e474a4a2245a2ef919051d79d4340">&#9670;&nbsp;</a></span>NSSLErrors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__nsysnet__nssl.html#ga2f185129b6c0e8ba140e23c79d2bbb1a">NSSLErrors</a> <a class="el" href="group__nsysnet__nssl.html#ga2f185129b6c0e8ba140e23c79d2bbb1a">NSSLErrors</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of errors returned by the NSSL library. </p>
 
 </div>
 </div>
@@ -280,12 +426,83 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The IDs of a system CA. </p>
-<p>These certificates are built-in to the system and can be added to a NSSL context with <a class="el" href="group__nsysnet__nssl.html#ga29af65684bb6a2a238998b1282e9be1b" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a>.</p>
+<p>These certificates are built-in to the system and can be added to a NSSL context with <a class="el" href="group__nsysnet__nssl.html#ga2f7c3c98435f289106de429ec2d0ccef" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a>.</p>
 <p>The names and fingerprints given in this documentation are taken from the real certificates inside the Wii U's CDN package. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga2f185129b6c0e8ba140e23c79d2bbb1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f185129b6c0e8ba140e23c79d2bbb1a">&#9670;&nbsp;</a></span>NSSLErrors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__nsysnet__nssl.html#ga2f185129b6c0e8ba140e23c79d2bbb1a">NSSLErrors</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of errors returned by the NSSL library. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aadae2288f8c1d13099920648bdb2f202f"></a>NSSL_ERROR_OK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aad33995851a115be8716b7068efe44f4a"></a>NSSL_ERROR_GENERIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa79cc51df7929948b7f2f4547eac86767"></a>NSSL_ERROR_INVALID_NSSL_CONTEXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aac0a66a6fcd7ae3e367b97e1cdb98adad"></a>NSSL_ERROR_INVALID_CERT_ID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa040a9669ad91d882b86a622eb8d86830"></a>NSSL_ERROR_CERT_LIMIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aad8edfadb69f65ea674da43be35b237ef"></a>NSSL_ERROR_INVALID_NSSL_CONNECTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa36afa97f7edb717f4e581b6507ffb21d"></a>NSSL_ERROR_INVALID_CERT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aad30992ac17690d8a3d30c7f715192fed"></a>NSSL_ERROR_ZERO_RETURN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa7d6d6699ced617d637cb4ee37f989a9b"></a>NSSL_ERROR_WANT_READ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa40a367a43350890277dd2b79cc232e87"></a>NSSL_ERROR_WANT_WRITE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa64dee871252782cfef1a7c1b7454162a"></a>NSSL_ERROR_IO_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa9286bc70e0733b53f5368ed98799a6ef"></a>NSSL_ERROR_NSSL_LIB_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aafed8749c7eceb8eb30d6fb7415229fe7"></a>NSSL_ERROR_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa5e7d5944d1ae0f1205ba887465a5d776"></a>NSSL_ERROR_OUT_OF_MEMORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa17a30bb7c1f267ea1925368a011683da"></a>NSSL_ERROR_INVALID_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa65de062d687f0158ef6e5efa31da0fb5"></a>NSSL_ERROR_HANDSHAKE_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa8494923dc8d30ec91965becb1908e02a"></a>NSSL_ERROR_NO_CERT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aac7a6d492af69f75dd05f5af5a0d5f95a"></a>NSSL_ERROR_INVALID_FD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa4e2271ae2fe8673236f4c458f583d31a"></a>NSSL_ERROR_LIB_NOT_READY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa7ce9a9eb3ffe80c6b7b5bd2032509364"></a>NSSL_ERROR_IPC_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aab31ddadff0c189daef3c9b661436d10f"></a>NSSL_ERROR_RESOURCE_LIMIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa32af0175484ffb68ebec63d7a570e853"></a>NSSL_ERROR_INVALID_HANDLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aacdba7340fd6b4406c723f1720ea347d7"></a>NSSL_ERROR_INVALID_CERT_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aaf22e3607338d108be482d70c139f0251"></a>NSSL_ERROR_INVALID_KEY_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aafd96e5fcadad28708a463f795d7d0df1"></a>NSSL_ERROR_INVALID_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa45d6cad73ac68f1a4505d6d30d479f7b"></a>NSSL_ERROR_NO_PEER_CERT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aac9bd172dd15fb2966d7a2da8fbc491ad"></a>NSSL_ERROR_INSUFFICIENT_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa6a0c0c51172ae396844eb2baeba2ceb7"></a>NSSL_ERROR_NO_CIPHER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aac10aafbac076e6e9cd3e5f814287a97b"></a>NSSL_ERROR_INVALID_ARG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa9beb070416d0056d74fddbf30ca8b5b0"></a>NSSL_ERROR_INVALID_NSSL_SESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa45da30345bc77328bb197fcb106fee37"></a>NSSL_ERROR_NO_SESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa045f7e37abec6614fbe16cde370a287d"></a>NSSL_ERROR_SSL_SHUTDOWN_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa89314922723759dcbd0b1e557cfbbe18"></a>NSSL_ERROR_CERT_SIZE_LIMIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aabfc00d91d977e419ff302f3f5d28df7c"></a>NSSL_ERROR_CERT_NO_ACCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa4dce924a541144c55ce27c4f7ac35408"></a>NSSL_ERROR_INVALID_CERT_ID2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aafea0bedbe8d4490fca8e963f2d043843"></a>NSSL_ERROR_CERT_READ_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa5a42a3e92af82129cfa8af48bd59f7cc"></a>NSSL_ERROR_CERT_STORE_INIT_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aaf38c3e765ba7e7bf42e0a5a18dbfa798"></a>NSSL_ERROR_INVALID_CERT_ENCODING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa21bd62d7ffaed16ba9e79f172dca08bd"></a>NSSL_ERROR_CERT_STORE_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa414950b105dd7f0c8b9b6158e2c804a7"></a>NSSL_ERROR_PRIVATE_KEY_READ_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa158b457cc47c0921f01e67b7c0422091"></a>NSSL_ERROR_INVALID_PRIVATE_KEY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa99d07571ce48be89f2ac56646093d114"></a>NSSL_ERROR_NOT_READY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aaa46b9a0998c8070d02eba1c7d9d62d98"></a>NSSL_ERROR_ENCRYPTION_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa901b0bdbca6a3cb0091600717a27eb14"></a>NSSL_ERROR_NO_CERT_STORE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aaeae2152f1a8796715b52a52b4cc4c5a3"></a>NSSL_ERROR_PRIVATE_KEY_SIZE_LIMIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aabedf37abbc7bf57c5a529de1d8525379"></a>NSSL_ERROR_PROCESS_MAX_EXT_CERTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aaab5ee271f3c0fa5cdceb3f877fde9878"></a>NSSL_ERROR_PROCESS_MAX_CONTEXTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa80d98a434c76f901d4f5a92a6c08093a"></a>NSSL_ERROR_PROCESS_MAX_CONNECTIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa44d7d7422fd118b75b2991c602429131"></a>NSSL_ERROR_CERT_NOT_EXPORTABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aadc124f2cc4f03aaf4f04ea3ebf6c1241"></a>NSSL_ERROR_INVALID_CERT_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2f185129b6c0e8ba140e23c79d2bbb1aa5bb7b0422af9383d211b0553ab8214cb"></a>NSSL_ERROR_INVALID_KEY_SIZE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00037">37</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
+
+</div>
+</div>
 <a id="ga38586a4d6115d2c6486aafefaf4fc162"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga38586a4d6115d2c6486aafefaf4fc162">&#9670;&nbsp;</a></span>NSSLServerCertId</h2>
 
@@ -299,7 +516,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The IDs of a system CA. </p>
-<p>These certificates are built-in to the system and can be added to a NSSL context with <a class="el" href="group__nsysnet__nssl.html#ga29af65684bb6a2a238998b1282e9be1b" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a>.</p>
+<p>These certificates are built-in to the system and can be added to a NSSL context with <a class="el" href="group__nsysnet__nssl.html#ga2f7c3c98435f289106de429ec2d0ccef" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a>.</p>
 <p>The names and fingerprints given in this documentation are taken from the real certificates inside the Wii U's CDN package. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga38586a4d6115d2c6486aafefaf4fc162a44764410cad55e71de7b54b1ef27396e"></a>NSSL_SERVER_CERT_GROUP_NINTENDO_FIRST&#160;</td><td class="fielddoc"><p>Represents the first certificate in the Nintendo CA group. </p>
@@ -398,19 +615,19 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00043">43</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nssl_8h_source.html#l00103">103</a> of file <a class="el" href="nssl_8h_source.html">nssl.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga271f6d02a5a17553605ee6f4c5d92201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga271f6d02a5a17553605ee6f4c5d92201">&#9670;&nbsp;</a></span>NSSLInit()</h2>
+<a id="ga61fafbd97e241f74a18eecdca88e8119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61fafbd97e241f74a18eecdca88e8119">&#9670;&nbsp;</a></span>NSSLInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLInit </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLInit </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -422,20 +639,20 @@ Functions</h2></td></tr>
 <p>This must be called before any other NSSL functions.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code on failure.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#gabd6dd47f0a2f3698fd07c3336119fd60" title="Cleans up and finishes use of the NSSL library.">NSSLFinish()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#ga8bfc3fcac80a11f8f3fc0d0920da608e" title="Cleans up and finishes use of the NSSL library.">NSSLFinish()</a> </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gabd6dd47f0a2f3698fd07c3336119fd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd6dd47f0a2f3698fd07c3336119fd60">&#9670;&nbsp;</a></span>NSSLFinish()</h2>
+<a id="ga8bfc3fcac80a11f8f3fc0d0920da608e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bfc3fcac80a11f8f3fc0d0920da608e">&#9670;&nbsp;</a></span>NSSLFinish()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLFinish </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLFinish </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -472,22 +689,22 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1" title="A handle to a NSSL context created with NSSLCreateContext().">NSSLContextHandle</a> representing the newly created context, or a negative value on error.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1" title="A handle to a NSSL context created with NSSLCreateContext().">NSSLContextHandle</a> representing the newly created context, or a negative value among NSSLErrors on error.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#ga2287e2c1ecb34493a1a3fe3359cc5ed1" title="Destroys a NSSL context.">NSSLDestroyContext()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#ga13ad242dcc1830f8f0f30f0166958a95" title="Destroys a NSSL context.">NSSLDestroyContext()</a> </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga2287e2c1ecb34493a1a3fe3359cc5ed1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2287e2c1ecb34493a1a3fe3359cc5ed1">&#9670;&nbsp;</a></span>NSSLDestroyContext()</h2>
+<a id="ga13ad242dcc1830f8f0f30f0166958a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13ad242dcc1830f8f0f30f0166958a95">&#9670;&nbsp;</a></span>NSSLDestroyContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLDestroyContext </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLDestroyContext </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a>&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
@@ -507,14 +724,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae26bc46ca42f79c3140119374c40cea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae26bc46ca42f79c3140119374c40cea5">&#9670;&nbsp;</a></span>NSSLAddServerPKIExternal()</h2>
+<a id="gac5e52dcc05808addd9355bfc927111c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5e52dcc05808addd9355bfc927111c4">&#9670;&nbsp;</a></span>NSSLAddServerPKIExternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLAddServerPKIExternal </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLAddServerPKIExternal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a>&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -557,20 +774,20 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative value on error.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#ga29af65684bb6a2a238998b1282e9be1b" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#ga2f7c3c98435f289106de429ec2d0ccef" title="Add a system root CA (one of NSSLServerCertId) to the given NSSL context.">NSSLAddServerPKI()</a> </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga29af65684bb6a2a238998b1282e9be1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga29af65684bb6a2a238998b1282e9be1b">&#9670;&nbsp;</a></span>NSSLAddServerPKI()</h2>
+<a id="ga2f7c3c98435f289106de429ec2d0ccef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f7c3c98435f289106de429ec2d0ccef">&#9670;&nbsp;</a></span>NSSLAddServerPKI()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLAddServerPKI </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLAddServerPKI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__nsysnet__nssl.html#gae46155a7e0f590af119edb140d974cb1">NSSLContextHandle</a>&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -599,7 +816,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative value on error.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#gae26bc46ca42f79c3140119374c40cea5" title="Add a custom root CA to the given NSSL context.">NSSLAddServerPKIExternal()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#gac5e52dcc05808addd9355bfc927111c4" title="Add a custom root CA to the given NSSL context.">NSSLAddServerPKIExternal()</a> </li>
 </ul>
 </dd></dl>
 
@@ -667,24 +884,24 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54" title="A handle to a NSSL connection created with NSSLCreateConnection().">NSSLConnectionHandle</a> representing the current connection.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54" title="A handle to a NSSL connection created with NSSLCreateConnection().">NSSLConnectionHandle</a> representing the current connection, or a negative value among NSSLErrors on error.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#ga6b734c16fb0ed64d42ae11cc2c583410" title="Read data from an open NSSL connection into a given buffer.">NSSLRead()</a></li>
-<li><a class="el" href="group__nsysnet__nssl.html#gac4f9fc85ec4f365aae566cb5205fcd91" title="Write data to an open NSSL connection from a given buffer.">NSSLWrite()</a></li>
-<li><a class="el" href="group__nsysnet__nssl.html#ga086f2b4473940cc47f13085184ecdb88" title="Close and destroy a NSSL connection.">NSSLDestroyConnection()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#ga1c28745fa874a6a3b76d48205f5f4ca7" title="Read data from an open NSSL connection into a given buffer.">NSSLRead()</a></li>
+<li><a class="el" href="group__nsysnet__nssl.html#gaf2905562f52320355f8ae7dd13d095ab" title="Write data to an open NSSL connection from a given buffer.">NSSLWrite()</a></li>
+<li><a class="el" href="group__nsysnet__nssl.html#gab9becac4ae0d499c5f336364e50aa29a" title="Close and destroy a NSSL connection.">NSSLDestroyConnection()</a> </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga086f2b4473940cc47f13085184ecdb88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga086f2b4473940cc47f13085184ecdb88">&#9670;&nbsp;</a></span>NSSLDestroyConnection()</h2>
+<a id="gab9becac4ae0d499c5f336364e50aa29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9becac4ae0d499c5f336364e50aa29a">&#9670;&nbsp;</a></span>NSSLDestroyConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLDestroyConnection </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLDestroyConnection </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a>&#160;</td>
           <td class="paramname"><em>connection</em></td><td>)</td>
@@ -704,14 +921,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6b734c16fb0ed64d42ae11cc2c583410"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6b734c16fb0ed64d42ae11cc2c583410">&#9670;&nbsp;</a></span>NSSLRead()</h2>
+<a id="ga1c28745fa874a6a3b76d48205f5f4ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c28745fa874a6a3b76d48205f5f4ca7">&#9670;&nbsp;</a></span>NSSLRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLRead </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLRead </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a>&#160;</td>
           <td class="paramname"><em>connection</em>, </td>
@@ -754,20 +971,20 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative value on error.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#gac4f9fc85ec4f365aae566cb5205fcd91" title="Write data to an open NSSL connection from a given buffer.">NSSLWrite()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#gaf2905562f52320355f8ae7dd13d095ab" title="Write data to an open NSSL connection from a given buffer.">NSSLWrite()</a> </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gac4f9fc85ec4f365aae566cb5205fcd91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4f9fc85ec4f365aae566cb5205fcd91">&#9670;&nbsp;</a></span>NSSLWrite()</h2>
+<a id="gaf2905562f52320355f8ae7dd13d095ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2905562f52320355f8ae7dd13d095ab">&#9670;&nbsp;</a></span>NSSLWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t NSSLWrite </td>
+          <td class="memname"><a class="el" href="group__nsysnet__nssl.html#ga796867529861c8c8f2e4bdc7e442562e">NSSLError</a> NSSLWrite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__nsysnet__nssl.html#ga79622287731ba9edbbcc5a7a21ad2c54">NSSLConnectionHandle</a>&#160;</td>
           <td class="paramname"><em>connection</em>, </td>
@@ -810,7 +1027,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative value on error.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a class="el" href="group__nsysnet__nssl.html#ga6b734c16fb0ed64d42ae11cc2c583410" title="Read data from an open NSSL connection into a given buffer.">NSSLRead()</a> </li>
+<li><a class="el" href="group__nsysnet__nssl.html#ga1c28745fa874a6a3b76d48205f5f4ca7" title="Read data from an open NSSL connection into a given buffer.">NSSLRead()</a> </li>
 </ul>
 </dd></dl>
 

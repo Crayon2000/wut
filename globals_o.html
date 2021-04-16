@@ -99,6 +99,12 @@ $(function() {
 <li>OS_DYNLOAD_LOADED
 : <a class="el" href="group__coreinit__dynload.html#gga49fab4b5016c916e35c068cd84ed5177a0feec6f36373211648d7708a5e47f09d">dynload.h</a>
 </li>
+<li>OS_DYNLOAD_NOTIFY_LOADED
+: <a class="el" href="group__coreinit__dynload.html#gga544d75b95c681d433dd0d727cb6ada19ad719921d1daeae231c1ffaf611e0096c">dynload.h</a>
+</li>
+<li>OS_DYNLOAD_NOTIFY_UNLOADED
+: <a class="el" href="group__coreinit__dynload.html#gga544d75b95c681d433dd0d727cb6ada19abb4e9fea8a1bcd1fcb821edca396e63e">dynload.h</a>
+</li>
 <li>OS_DYNLOAD_OK
 : <a class="el" href="group__coreinit__dynload.html#gga5245754f5bd591f3b573a45b1e856bf7a97cc156f7d96bd0a74a74dd9c84069cf">dynload.h</a>
 </li>
@@ -450,6 +456,12 @@ $(function() {
 <li>OSDynLoad_Acquire()
 : <a class="el" href="group__coreinit__dynload.html#ga7e6521b6f014cd521db72bf7b2598c31">dynload.h</a>
 </li>
+<li>OSDynLoad_AddNotifyCallback()
+: <a class="el" href="group__coreinit__dynload.html#ga2f57735f91581e241e9c829f1aef1ca3">dynload.h</a>
+</li>
+<li>OSDynLoad_DelNotifyCallback()
+: <a class="el" href="group__coreinit__dynload.html#ga6238d9b6abd221d927f744ebf915a4c5">dynload.h</a>
+</li>
 <li>OSDynLoad_EntryReason
 : <a class="el" href="group__coreinit__dynload.html#ga49fab4b5016c916e35c068cd84ed5177">dynload.h</a>
 </li>
@@ -474,11 +486,17 @@ $(function() {
 <li>OSDynLoad_GetTLSAllocator()
 : <a class="el" href="group__coreinit__dynload.html#gaa44e781838aef7106eb64c385f4aee18">dynload.h</a>
 </li>
+<li>OSDynLoad_IsModuleLoaded()
+: <a class="el" href="group__coreinit__dynload.html#gaee6b010bd25c1eb5d582640023842eb0">dynload.h</a>
+</li>
 <li>OSDynLoad_Module
 : <a class="el" href="group__coreinit__dynload.html#ga16bf6e0b644e2160e7d444483aa2daa6">dynload.h</a>
 </li>
 <li>OSDynLoad_NotifyData
 : <a class="el" href="group__coreinit__dynload.html#gacf09ada77880f66859f9746ea4d79aef">dynload.h</a>
+</li>
+<li>OSDynLoad_NotifyReason
+: <a class="el" href="group__coreinit__dynload.html#ga544d75b95c681d433dd0d727cb6ada19">dynload.h</a>
 </li>
 <li>OSDynLoad_Release()
 : <a class="el" href="group__coreinit__dynload.html#gad85028e9723ff151db81951f615d5313">dynload.h</a>
@@ -494,6 +512,9 @@ $(function() {
 </li>
 <li>OSDynLoadFreeFn
 : <a class="el" href="group__coreinit__dynload.html#ga09658d49df7c02cbe47b5043fb81c211">dynload.h</a>
+</li>
+<li>OSDynLoadNotifyFunc
+: <a class="el" href="group__coreinit__dynload.html#ga97992b91ae62ff354bfd15b28e76e989">dynload.h</a>
 </li>
 <li>OSEffectiveToPhysical()
 : <a class="el" href="group__coreinit__memorymap.html#ga5de23bca9392d8b438861f2ceac173ed">memorymap.h</a>
@@ -608,6 +629,9 @@ $(function() {
 </li>
 <li>OSGetDataPhysAddrRange()
 : <a class="el" href="group__coreinit__memorymap.html#ga27856f3b01004398f43f111eceef6c83">memorymap.h</a>
+</li>
+<li>OSGetDefaultAppIOQueue()
+: <a class="el" href="group__coreinit__msgq.html#ga1d63ca5bd0116af4cfee1935cbc6e1c8">messagequeue.h</a>
 </li>
 <li>OSGetDefaultThread()
 : <a class="el" href="group__coreinit__thread.html#gad10a0ac959b7542472ae547a1e38b2b7">thread.h</a>
@@ -805,9 +829,9 @@ $(function() {
 : <a class="el" href="group__coreinit__time.html#ga3af64061ec6671a5297a1a049d21b95d">time.h</a>
 </li>
 <li>OSMutex
-: <a class="el" href="group__coreinit__mutex.html#ga42b7c5a07043d7f6c8324f51ac1747c8">mutex.h</a>
+: <a class="el" href="group__coreinit__cond.html#ga42b7c5a07043d7f6c8324f51ac1747c8">condition.h</a>
 , <a class="el" href="group__coreinit__thread.html#ga42b7c5a07043d7f6c8324f51ac1747c8">thread.h</a>
-, <a class="el" href="group__coreinit__cond.html#ga42b7c5a07043d7f6c8324f51ac1747c8">condition.h</a>
+, <a class="el" href="group__coreinit__mutex.html#ga42b7c5a07043d7f6c8324f51ac1747c8">mutex.h</a>
 </li>
 <li>OSMutexLink
 : <a class="el" href="group__coreinit__mutex.html#ga02c300c2030e332ddab54fba6272d821">mutex.h</a>
@@ -969,7 +993,7 @@ $(function() {
 : <a class="el" href="group__coreinit__thread.html#ga3be0f7ef0eed586ef8bf5d57f3cd1dfa">thread.h</a>
 </li>
 <li>OSSharedDataType
-: <a class="el" href="group__coreinit__memory.html#gaedceca673182ba826114a25f14632063">memory.h</a>
+: <a class="el" href="group__coreinit__memory.html#ga42b24710c4a328959b72fae71d9c9de9">memory.h</a>
 </li>
 <li>OSSignalCond()
 : <a class="el" href="group__coreinit__cond.html#ga4ad088d1be5fd1558263491a65b48984">condition.h</a>
@@ -1035,8 +1059,8 @@ $(function() {
 : <a class="el" href="group__coreinit__thread.html#ga3d5f9fe631c3b30a30ee84a2d32a617c">thread.h</a>
 </li>
 <li>OSThread
-: <a class="el" href="group__coreinit__mutex.html#ga21cc46877b04baece01ef544fa06a906">mutex.h</a>
-, <a class="el" href="group__coreinit__threadq.html#ga21cc46877b04baece01ef544fa06a906">threadqueue.h</a>
+: <a class="el" href="group__coreinit__threadq.html#ga21cc46877b04baece01ef544fa06a906">threadqueue.h</a>
+, <a class="el" href="group__coreinit__mutex.html#ga21cc46877b04baece01ef544fa06a906">mutex.h</a>
 , <a class="el" href="group__coreinit__thread.html#ga21cc46877b04baece01ef544fa06a906">thread.h</a>
 </li>
 <li>OSThreadAttributes

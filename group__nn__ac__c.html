@@ -94,6 +94,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaccea212848e9bdb550d734004f130102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nn__ac__c.html#gaccea212848e9bdb550d734004f130102">ACFinalize</a> ()</td></tr>
 <tr class="memdesc:gaccea212848e9bdb550d734004f130102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup the Auto Connect library.  <a href="group__nn__ac__c.html#gaccea212848e9bdb550d734004f130102">More...</a><br /></td></tr>
 <tr class="separator:gaccea212848e9bdb550d734004f130102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec7cc022f6318e0af56563693ff42514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nn__result.html#structNNResult">NNResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nn__ac__c.html#gaec7cc022f6318e0af56563693ff42514">ACConnect</a> ()</td></tr>
+<tr class="memdesc:gaec7cc022f6318e0af56563693ff42514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to a network, using the default configuration.  <a href="group__nn__ac__c.html#gaec7cc022f6318e0af56563693ff42514">More...</a><br /></td></tr>
+<tr class="separator:gaec7cc022f6318e0af56563693ff42514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad96152903ef2057f8b9de5d377032cc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nn__result.html#structNNResult">NNResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nn__ac__c.html#gad96152903ef2057f8b9de5d377032cc6">ACIsApplicationConnected</a> (<a class="el" href="wut__types_8h.html#a975dbe9e4396bf9e0064ce01827fa372">BOOL</a> *connected)</td></tr>
+<tr class="memdesc:gad96152903ef2057f8b9de5d377032cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the console is currently connected to a network.  <a href="group__nn__ac__c.html#gad96152903ef2057f8b9de5d377032cc6">More...</a><br /></td></tr>
+<tr class="separator:gad96152903ef2057f8b9de5d377032cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae41d02a4ead38ff75bc2929354818fbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__nn__result.html#structNNResult">NNResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nn__ac__c.html#gae41d02a4ead38ff75bc2929354818fbb">ACGetStartupId</a> (<a class="el" href="group__nn__ac__c.html#gac4a8e848f723536de1ae83651cd91d8d">ACConfigId</a> *configId)</td></tr>
 <tr class="memdesc:gae41d02a4ead38ff75bc2929354818fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default connection configuration id.  <a href="group__nn__ac__c.html#gae41d02a4ead38ff75bc2929354818fbb">More...</a><br /></td></tr>
 <tr class="separator:gae41d02a4ead38ff75bc2929354818fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +179,47 @@ Functions</h2></td></tr>
 <li><a class="el" href="group__nn__ac__c.html#ga1456945fe4303e08071b97571b20d807">ACInitialize</a> </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="gaec7cc022f6318e0af56563693ff42514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec7cc022f6318e0af56563693ff42514">&#9670;&nbsp;</a></span>ACConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__nn__result.html#structNNResult">NNResult</a> ACConnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connects to a network, using the default configuration. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__nn__result.html">Result</a> - see <a class="el" href="group__nn__result.html#ga4160f94e09672fbf59c46cb8ef4b732b">NNResult_IsSuccess</a> and <a class="el" href="group__nn__result.html#ga035e23b8947fe268f21b3a3f7c7edb3b">NNResult_IsFailure</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gad96152903ef2057f8b9de5d377032cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad96152903ef2057f8b9de5d377032cc6">&#9670;&nbsp;</a></span>ACIsApplicationConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__nn__result.html#structNNResult">NNResult</a> ACIsApplicationConnected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="wut__types_8h.html#a975dbe9e4396bf9e0064ce01827fa372">BOOL</a> *&#160;</td>
+          <td class="paramname"><em>connected</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the console is currently connected to a network. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="group__nn__result.html">Result</a> - see <a class="el" href="group__nn__result.html#ga4160f94e09672fbf59c46cb8ef4b732b">NNResult_IsSuccess</a> and <a class="el" href="group__nn__result.html#ga035e23b8947fe268f21b3a3f7c7edb3b">NNResult_IsFailure</a>. </dd></dl>
 
 </div>
 </div>

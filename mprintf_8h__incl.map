@@ -1,24 +1,26 @@
 <map id="/home/runner/work/wut/wut/include/curl/mprintf.h" name="/home/runner/work/wut/wut/include/curl/mprintf.h">
-<area shape="rect" id="node1" title=" " alt="" coords="84,5,276,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="68,95,143,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,169,72,196"/>
-<area shape="rect" id="node4" href="$curl_8h.html" title=" " alt="" coords="359,95,417,121"/>
-<area shape="rect" id="node5" href="$curlver_8h.html" title=" " alt="" coords="535,169,614,196"/>
-<area shape="rect" id="node6" href="$curlbuild_8h.html" title=" " alt="" coords="639,169,729,196"/>
-<area shape="rect" id="node14" title=" " alt="" coords="139,319,235,345"/>
-<area shape="rect" id="node17" href="$curlrules_8h.html" title=" " alt="" coords="147,169,237,196"/>
-<area shape="rect" id="node18" title=" " alt="" coords="262,169,333,196"/>
-<area shape="rect" id="node19" href="$time_8h.html" title=" " alt="" coords="773,169,837,196"/>
-<area shape="rect" id="node21" href="$easy_8h.html" title=" " alt="" coords="357,169,419,196"/>
-<area shape="rect" id="node22" href="$multi_8h.html" title=" " alt="" coords="443,169,511,196"/>
-<area shape="rect" id="node7" href="$socket_8h.html" title=" " alt="" coords="485,244,616,271"/>
-<area shape="rect" id="node11" title=" " alt="" coords="602,468,673,495"/>
-<area shape="rect" id="node16" title=" " alt="" coords="641,244,727,271"/>
-<area shape="rect" id="node8" href="$wut_8h.html" title=" " alt="" coords="812,319,871,345"/>
-<area shape="rect" id="node13" title=" " alt="" coords="387,319,477,345"/>
-<area shape="rect" id="node15" title=" " alt="" coords="501,319,600,345"/>
-<area shape="rect" id="node9" title=" " alt="" coords="813,393,941,420"/>
-<area shape="rect" id="node10" href="$wut__types_8h.html" title=" " alt="" coords="965,393,1067,420"/>
-<area shape="rect" id="node12" href="$wut__rplwrap_8h.html" title=" " alt="" coords="675,393,789,420"/>
-<area shape="rect" id="node20" href="$systeminfo_8h.html" title=" " alt="" coords="752,244,859,271"/>
+<area shape="rect" id="node1" title=" " alt="" coords="131,5,323,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="115,95,189,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="44,169,111,196"/>
+<area shape="rect" id="node4" href="$curl_8h.html" title=" " alt="" coords="415,95,473,121"/>
+<area shape="rect" id="node5" href="$curlver_8h.html" title=" " alt="" coords="783,169,862,196"/>
+<area shape="rect" id="node6" href="$curlbuild_8h.html" title=" " alt="" coords="103,319,193,345"/>
+<area shape="rect" id="node11" href="$curlrules_8h.html" title=" " alt="" coords="185,169,276,196"/>
+<area shape="rect" id="node12" title=" " alt="" coords="301,169,371,196"/>
+<area shape="rect" id="node13" title=" " alt="" coords="396,169,492,196"/>
+<area shape="rect" id="node14" href="$time_8h.html" title=" " alt="" coords="516,169,580,196"/>
+<area shape="rect" id="node23" href="$easy_8h.html" title=" " alt="" coords="605,169,667,196"/>
+<area shape="rect" id="node24" href="$multi_8h.html" title=" " alt="" coords="691,169,759,196"/>
+<area shape="rect" id="node7" href="$sys_2socket_8h.html" title=" " alt="" coords="7,393,110,420"/>
+<area shape="rect" id="node8" title=" " alt="" coords="121,468,191,495"/>
+<area shape="rect" id="node10" title=" " alt="" coords="186,393,273,420"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,468,96,495"/>
+<area shape="rect" id="node15" href="$wut_8h.html" title=" " alt="" coords="471,319,529,345"/>
+<area shape="rect" id="node22" href="$systeminfo_8h.html" title=" " alt="" coords="425,244,532,271"/>
+<area shape="rect" id="node16" title=" " alt="" coords="297,393,425,420"/>
+<area shape="rect" id="node17" href="$wut__types_8h.html" title=" " alt="" coords="449,393,551,420"/>
+<area shape="rect" id="node21" href="$wut__rplwrap_8h.html" title=" " alt="" coords="575,393,689,420"/>
+<area shape="rect" id="node18" title=" " alt="" coords="459,468,541,495"/>
+<area shape="rect" id="node19" title=" " alt="" coords="565,468,640,495"/>
+<area shape="rect" id="node20" title=" " alt="" coords="347,468,434,495"/>
 </map>

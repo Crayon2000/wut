@@ -130,6 +130,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga77c880c8125209467df8d865cedd7622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab6651bd09c5fb2d687efe08809a045d1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__coreinit__fs.html#structFSStateChangeInfo">FSStateChangeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gab6651bd09c5fb2d687efe08809a045d1">FSStateChangeInfo</a></td></tr>
 <tr class="separator:gab6651bd09c5fb2d687efe08809a045d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99183d2eb6bb1d6a872103bb6b345741"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga99183d2eb6bb1d6a872103bb6b345741">FSErrorFlag</a></td></tr>
+<tr class="separator:ga99183d2eb6bb1d6a872103bb6b345741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58b85e803ff2d18ff8d5ea333e20601f"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga58b85e803ff2d18ff8d5ea333e20601f">FSStatus</a></td></tr>
 <tr class="separator:ga58b85e803ff2d18ff8d5ea333e20601f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92dfc1cb46d1c94d258de0e1efa967b0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__coreinit__fs.html#ga9d75a2f66784083c8a0946918841f97c">FSError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga92dfc1cb46d1c94d258de0e1efa967b0">FSError</a></td></tr>
@@ -147,6 +149,37 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga0855d2d4cd8ada5af1a2b71246039e53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> { <br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a536cff1b3fea9dfe46bbf998fc21ee30">FS_ERROR_FLAG_NONE</a> = 0x0, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53abe3262660a51bb75899703d9522733aa">FS_ERROR_FLAG_MAX</a> = 0x1, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a988e36086d1448183b2ca4e005e5877b">FS_ERROR_FLAG_ALREADY_OPEN</a> = 0x2, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a08ea0d09e6eed7500fc87c4d36ad8794">FS_ERROR_FLAG_EXISTS</a> = 0x4, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a2561336bacb68191ce72e5ec92903942">FS_ERROR_FLAG_NOT_FOUND</a> = 0x8, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a8ae25493bb63422614a4abda483c2def">FS_ERROR_FLAG_NOT_FILE</a> = 0x10, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53aca473dd787d61b21cda3c670a8762509">FS_ERROR_FLAG_NOT_DIR</a> = 0x20, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53af2d8062457af5031947a0d01197d03cc">FS_ERROR_FLAG_ACCESS_ERROR</a> = 0x40, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a11627bc63678ef3db779fbba5111f7b8">FS_ERROR_FLAG_PERMISSION_ERROR</a> = 0x80, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53aa8d641595763e68b808aaf3502d7df0d">FS_ERROR_FLAG_FILE_TOO_BIG</a> = 0x100, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a487094f8a975ad66ad39453ad36a1644">FS_ERROR_FLAG_STORAGE_FULL</a> = 0x200, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a2568ee1bc5f1e9040920543affb05515">FS_ERROR_FLAG_UNSUPPORTED_CMD</a> = 0x400, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a4bdcfff3c2be5809a75e76661fef18e5">FS_ERROR_FLAG_JOURNAL_FULL</a> = 0x800, 
+<br />
+&#160;&#160;<a class="el" href="group__coreinit__fs.html#gga0855d2d4cd8ada5af1a2b71246039e53a5d70a78f721e460807fd119a60d7c49a">FS_ERROR_FLAG_ALL</a> = 0xFFFFFFFF
+<br />
+ }</td></tr>
+<tr class="separator:ga0855d2d4cd8ada5af1a2b71246039e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f6b17153671191447543d781627f223"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a> { <br />
 &#160;&#160;<a class="el" href="group__coreinit__fs.html#gga1f6b17153671191447543d781627f223ad4f201b7af62c7ecc3447e4fbb29aa18">FS_STATUS_OK</a> = 0, 
 <br />
@@ -330,10 +363,10 @@ Functions</h2></td></tr>
 <tr class="separator:gafacf27c729ccabbf69d8444103f13255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e4c4b3116eafdbe091851cab48fcf2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga2e4c4b3116eafdbe091851cab48fcf2d">FSShutdown</a> ()</td></tr>
 <tr class="separator:ga2e4c4b3116eafdbe091851cab48fcf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6b1c7ae623fb1be303c4b3f894c1e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gae6b1c7ae623fb1be303c4b3f894c1e58">FSAddClient</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, uint32_t flags)</td></tr>
-<tr class="separator:gae6b1c7ae623fb1be303c4b3f894c1e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf809ada814079c8338f7fc01c7653d91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaf809ada814079c8338f7fc01c7653d91">FSDelClient</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, uint32_t flags)</td></tr>
-<tr class="separator:gaf809ada814079c8338f7fc01c7653d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga760f1f80ec321ac11497639dbe4b5289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga760f1f80ec321ac11497639dbe4b5289">FSAddClient</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga760f1f80ec321ac11497639dbe4b5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe6664f632bd98788508e6580f8a11a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gabe6664f632bd98788508e6580f8a11a9">FSDelClient</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gabe6664f632bd98788508e6580f8a11a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2de30738678ac3e8de689fb78ce6aec6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga2de30738678ac3e8de689fb78ce6aec6">FSGetClientNum</a> ()</td></tr>
 <tr class="separator:ga2de30738678ac3e8de689fb78ce6aec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d2ee61abad5cd681f61a3772ce6a32b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga0d2ee61abad5cd681f61a3772ce6a32b">FSInitCmdBlock</a> (<a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block)</td></tr>
@@ -342,110 +375,110 @@ Functions</h2></td></tr>
 <tr class="separator:ga531775bb68b2a948745692bee4af1d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1a31325992505191861e496dccb334d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad1a31325992505191861e496dccb334d">FSSetStateChangeNotification</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSStateChangeInfo">FSStateChangeInfo</a> *info)</td></tr>
 <tr class="separator:gad1a31325992505191861e496dccb334d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e52409c57c366c57f624dffe1a20cb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga8e52409c57c366c57f624dffe1a20cb2">FSGetCwd</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *buffer, uint32_t bufferSize, uint32_t flags)</td></tr>
-<tr class="separator:ga8e52409c57c366c57f624dffe1a20cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c20a87378abde146d411f4a6f6771ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga6c20a87378abde146d411f4a6f6771ed">FSChangeDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, uint32_t flags)</td></tr>
-<tr class="separator:ga6c20a87378abde146d411f4a6f6771ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga325f4672edf33485e69818b64d5bf95d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga325f4672edf33485e69818b64d5bf95d">FSChangeDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga325f4672edf33485e69818b64d5bf95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed0c05ae94e15752864f4ca618878dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaed0c05ae94e15752864f4ca618878dda">FSGetCwd</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *buffer, uint32_t bufferSize, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gaed0c05ae94e15752864f4ca618878dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga639b242647970bae759e1854a103af61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga639b242647970bae759e1854a103af61">FSChangeDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga639b242647970bae759e1854a103af61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3beb4db49800a14e4b60c14efb6808b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad3beb4db49800a14e4b60c14efb6808b">FSChangeDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gad3beb4db49800a14e4b60c14efb6808b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga330bc82ddba1a0964127e120df14a3fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#structFSAsyncResult">FSAsyncResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga330bc82ddba1a0964127e120df14a3fb">FSGetAsyncResult</a> (<a class="el" href="group__coreinit__fs.html#structFSMessage">FSMessage</a> *message)</td></tr>
 <tr class="separator:ga330bc82ddba1a0964127e120df14a3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dbe33607c343ac5cb88381003662efb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga1dbe33607c343ac5cb88381003662efb">FSGetStat</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, uint32_t flags)</td></tr>
-<tr class="separator:ga1dbe33607c343ac5cb88381003662efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5aa4bcbe7432c32cc20977875994a1d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga5aa4bcbe7432c32cc20977875994a1d5">FSGetStatAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga5aa4bcbe7432c32cc20977875994a1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e2dc8e555ab2d51be4b234d2d6ad5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga84e2dc8e555ab2d51be4b234d2d6ad5b">FSRemove</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, uint32_t flags)</td></tr>
-<tr class="separator:ga84e2dc8e555ab2d51be4b234d2d6ad5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30ca4ecd100c25cd3e0e3f73d2b88f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga30ca4ecd100c25cd3e0e3f73d2b88f6a">FSRemoveAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga30ca4ecd100c25cd3e0e3f73d2b88f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ac705f23d6d2e421e3001e8650d31ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga5ac705f23d6d2e421e3001e8650d31ee">FSOpenFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, const char *mode, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> *handle, uint32_t flags)</td></tr>
-<tr class="separator:ga5ac705f23d6d2e421e3001e8650d31ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae80045016bfddb9630c6b6c9ad82899f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gae80045016bfddb9630c6b6c9ad82899f">FSOpenFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, const char *mode, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> *outHandle, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gae80045016bfddb9630c6b6c9ad82899f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffee1c1cebc8ddaf19562d80fa64c24d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaffee1c1cebc8ddaf19562d80fa64c24d">FSCloseFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t flags)</td></tr>
-<tr class="separator:gaffee1c1cebc8ddaf19562d80fa64c24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b53d68828f0c244a91cc85388178d73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9b53d68828f0c244a91cc85388178d73">FSCloseFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga9b53d68828f0c244a91cc85388178d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafdcb815d20df20c0dec4c9abc12feaca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gafdcb815d20df20c0dec4c9abc12feaca">FSOpenDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> *handle, uint32_t flags)</td></tr>
-<tr class="separator:gafdcb815d20df20c0dec4c9abc12feaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c3cc277e16158e3a4cb76b037b3cf47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga6c3cc277e16158e3a4cb76b037b3cf47">FSOpenDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> *handle, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga6c3cc277e16158e3a4cb76b037b3cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76e389b6b63c5e9e9e174913cb9c83e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga76e389b6b63c5e9e9e174913cb9c83e4">FSMakeDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, uint32_t flags)</td></tr>
-<tr class="separator:ga76e389b6b63c5e9e9e174913cb9c83e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf230fe66f03556850cc7b2ef520dec78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaf230fe66f03556850cc7b2ef520dec78">FSMakeDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gaf230fe66f03556850cc7b2ef520dec78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab527678f4952d10e16c7755674e615e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gab527678f4952d10e16c7755674e615e6">FSReadDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSDirectoryEntry">FSDirectoryEntry</a> *entry, uint32_t flags)</td></tr>
-<tr class="separator:gab527678f4952d10e16c7755674e615e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacae0c0c96644131d65b63fec6b9348b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gacae0c0c96644131d65b63fec6b9348b2">FSReadDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSDirectoryEntry">FSDirectoryEntry</a> *entry, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gacae0c0c96644131d65b63fec6b9348b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga013c06ce52d6e341647e054fdcacf03a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga013c06ce52d6e341647e054fdcacf03a">FSRewindDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, uint32_t flags)</td></tr>
-<tr class="separator:ga013c06ce52d6e341647e054fdcacf03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b6d84a9b812cd8bb9d1b6b7ceaf31f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga0b6d84a9b812cd8bb9d1b6b7ceaf31f2">FSCloseDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, uint32_t flags)</td></tr>
-<tr class="separator:ga0b6d84a9b812cd8bb9d1b6b7ceaf31f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga54ca366b15c2c4609bd6a8d2ddbf10a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga54ca366b15c2c4609bd6a8d2ddbf10a4">FSCloseDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga54ca366b15c2c4609bd6a8d2ddbf10a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9fd06d1a241dd83a46b4084828171fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gab9fd06d1a241dd83a46b4084828171fd">FSChangeMode</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, <a class="el" href="group__coreinit__fs.html#ga6262a647f387b5128a72e5fd2ce9c25f">FSMode</a> mode, uint32_t flags)</td></tr>
-<tr class="separator:gab9fd06d1a241dd83a46b4084828171fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa414236a93ef73e246e16d1a09876709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaa414236a93ef73e246e16d1a09876709">FSChangeModeAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, <a class="el" href="group__coreinit__fs.html#ga6262a647f387b5128a72e5fd2ce9c25f">FSMode</a> mode, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gaa414236a93ef73e246e16d1a09876709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0397b4710788a2d475af13dda955c356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga0397b4710788a2d475af13dda955c356">FSGetFreeSpaceSize</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, uint64_t *outSize, uint32_t flags)</td></tr>
-<tr class="separator:ga0397b4710788a2d475af13dda955c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf6ded1a1b74b883d335ee0e7167f327"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gabf6ded1a1b74b883d335ee0e7167f327">FSGetFreeSpaceSizeAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, uint64_t *outSize, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gabf6ded1a1b74b883d335ee0e7167f327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab7a5689fd0df1112819969d9c975008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaab7a5689fd0df1112819969d9c975008">FSGetStatFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, uint32_t flags)</td></tr>
-<tr class="separator:gaab7a5689fd0df1112819969d9c975008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6ab89925210fcaf553a7e09b116bc00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaa6ab89925210fcaf553a7e09b116bc00">FSGetStatFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gaa6ab89925210fcaf553a7e09b116bc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb2e5f8da780143139b1063c33027f91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaeb2e5f8da780143139b1063c33027f91">FSReadFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags)</td></tr>
-<tr class="separator:gaeb2e5f8da780143139b1063c33027f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab79ebab01218bba7efb878d5808cc549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gab79ebab01218bba7efb878d5808cc549">FSReadFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gab79ebab01218bba7efb878d5808cc549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dc0f94e4e56545011a13242b8187e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga1dc0f94e4e56545011a13242b8187e9b">FSReadFileWithPos</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags)</td></tr>
-<tr class="separator:ga1dc0f94e4e56545011a13242b8187e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc3b8151d6deb726c12c1ea1415848fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gadc3b8151d6deb726c12c1ea1415848fe">FSReadFileWithPosAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gadc3b8151d6deb726c12c1ea1415848fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52e0d781d81dfde7639ea121611625c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga52e0d781d81dfde7639ea121611625c8">FSWriteFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags)</td></tr>
-<tr class="separator:ga52e0d781d81dfde7639ea121611625c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ff16152cd18b276de847f85707dae94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga2ff16152cd18b276de847f85707dae94">FSWriteFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga2ff16152cd18b276de847f85707dae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92de3d0c94660683d41af0e724794a88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga92de3d0c94660683d41af0e724794a88">FSWriteFileWithPos</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags)</td></tr>
-<tr class="separator:ga92de3d0c94660683d41af0e724794a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6d4112e13f25df7b34d7fa1f99a5f73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gac6d4112e13f25df7b34d7fa1f99a5f73">FSWriteFileWithPosAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gac6d4112e13f25df7b34d7fa1f99a5f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3b155af2b58e7c55000feea13c8c344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaa3b155af2b58e7c55000feea13c8c344">FSGetPosFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> fileHandle, uint32_t *pos, uint32_t flags)</td></tr>
-<tr class="separator:gaa3b155af2b58e7c55000feea13c8c344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1601ecd3c75bdb1cc1a33ff59ff75206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga1601ecd3c75bdb1cc1a33ff59ff75206">FSGetPosFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> fileHandle, uint32_t *pos, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga1601ecd3c75bdb1cc1a33ff59ff75206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga999fcf3d7c8f2f4bc7db59004642552f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga999fcf3d7c8f2f4bc7db59004642552f">FSSetPosFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t pos, uint32_t flags)</td></tr>
-<tr class="separator:ga999fcf3d7c8f2f4bc7db59004642552f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9017d098fb0c8d585c06fb510cc243c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9017d098fb0c8d585c06fb510cc243c3">FSSetPosFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t pos, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga9017d098fb0c8d585c06fb510cc243c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3333531974ac1e266c3c395f9848a78d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga3333531974ac1e266c3c395f9848a78d">FSFlushFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t flags)</td></tr>
-<tr class="separator:ga3333531974ac1e266c3c395f9848a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7a030fc92a14e7146cdc4466ee65cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaf7a030fc92a14e7146cdc4466ee65cb0">FSFlushFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gaf7a030fc92a14e7146cdc4466ee65cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae61bdaed510a844c7ad7ccfea0d5b057"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gae61bdaed510a844c7ad7ccfea0d5b057">FSTruncateFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t flags)</td></tr>
-<tr class="separator:gae61bdaed510a844c7ad7ccfea0d5b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e52bab5d05fb8273910ab5f6f68172a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9e52bab5d05fb8273910ab5f6f68172a">FSTruncateFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:ga9e52bab5d05fb8273910ab5f6f68172a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga286649da34fff22d432166a931245f43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga286649da34fff22d432166a931245f43">FSRename</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *oldPath, const char *newPath, uint32_t flags)</td></tr>
-<tr class="separator:ga286649da34fff22d432166a931245f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab023e58fcab3790467db16db2e654343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gab023e58fcab3790467db16db2e654343">FSRenameAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *oldPath, const char *newPath, uint32_t flags, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
-<tr class="separator:gab023e58fcab3790467db16db2e654343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9646eba3da257d6c8c6567ee399ca5f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9646eba3da257d6c8c6567ee399ca5f6">FSGetStat</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga9646eba3da257d6c8c6567ee399ca5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7fe88d1312c87646de73a12913da316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad7fe88d1312c87646de73a12913da316">FSGetStatAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gad7fe88d1312c87646de73a12913da316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga344285052c238931420a49875eb0e3c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga344285052c238931420a49875eb0e3c2">FSRemove</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga344285052c238931420a49875eb0e3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ca213d2260bd1f1b34187b9a47efd83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga2ca213d2260bd1f1b34187b9a47efd83">FSRemoveAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga2ca213d2260bd1f1b34187b9a47efd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33afd82e53a692a6ea89993afdae45ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga33afd82e53a692a6ea89993afdae45ff">FSOpenFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, const char *mode, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> *handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga33afd82e53a692a6ea89993afdae45ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76ec728d36fc73099af8806945ef420a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga76ec728d36fc73099af8806945ef420a">FSOpenFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, const char *mode, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> *outHandle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga76ec728d36fc73099af8806945ef420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7b5a7d33b12f917f6acd076a95bed94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gac7b5a7d33b12f917f6acd076a95bed94">FSCloseFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gac7b5a7d33b12f917f6acd076a95bed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f3c7f9cd0cf62ba64e9cbf136e4396a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9f3c7f9cd0cf62ba64e9cbf136e4396a">FSCloseFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga9f3c7f9cd0cf62ba64e9cbf136e4396a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeead023badf2b9569c2599f73bf8c6a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaeead023badf2b9569c2599f73bf8c6a6">FSOpenDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> *handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gaeead023badf2b9569c2599f73bf8c6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c90ceda1df3f12c4615eb7bf052c5d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga7c90ceda1df3f12c4615eb7bf052c5d6">FSOpenDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> *handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga7c90ceda1df3f12c4615eb7bf052c5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa64b1b35f2269488088095f302e6f407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaa64b1b35f2269488088095f302e6f407">FSMakeDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gaa64b1b35f2269488088095f302e6f407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b1992a594ea9d6fd27ece3027aca785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9b1992a594ea9d6fd27ece3027aca785">FSMakeDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *path, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga9b1992a594ea9d6fd27ece3027aca785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ccabfb7058d7800b1c669f0d7b0746b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga7ccabfb7058d7800b1c669f0d7b0746b">FSReadDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSDirectoryEntry">FSDirectoryEntry</a> *entry, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga7ccabfb7058d7800b1c669f0d7b0746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabadc8cb739151c89e40912e05dba295f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gabadc8cb739151c89e40912e05dba295f">FSReadDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSDirectoryEntry">FSDirectoryEntry</a> *entry, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gabadc8cb739151c89e40912e05dba295f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3170ab03aa0e68c90c172051dbaa77c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga3170ab03aa0e68c90c172051dbaa77c4">FSRewindDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga3170ab03aa0e68c90c172051dbaa77c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad47a09942b9b2fdc5984ef1cd5cd6e3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad47a09942b9b2fdc5984ef1cd5cd6e3f">FSCloseDir</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gad47a09942b9b2fdc5984ef1cd5cd6e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0b1ecc4c4ba01b5c8413b8212af01d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gac0b1ecc4c4ba01b5c8413b8212af01d7">FSCloseDirAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga2d767e5c83f5bd44e88478fa122054d4">FSDirectoryHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gac0b1ecc4c4ba01b5c8413b8212af01d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9901d53bf43cd5b1ee87514e0ab91894"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9901d53bf43cd5b1ee87514e0ab91894">FSChangeMode</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, <a class="el" href="group__coreinit__fs.html#ga6262a647f387b5128a72e5fd2ce9c25f">FSMode</a> mode, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga9901d53bf43cd5b1ee87514e0ab91894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad93a2dc6559fd69c9a2f2f42a250681b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad93a2dc6559fd69c9a2f2f42a250681b">FSChangeModeAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, <a class="el" href="group__coreinit__fs.html#ga6262a647f387b5128a72e5fd2ce9c25f">FSMode</a> mode, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gad93a2dc6559fd69c9a2f2f42a250681b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd42a629abd064cfdee5ff90e315a92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gadd42a629abd064cfdee5ff90e315a92b">FSGetFreeSpaceSize</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, uint64_t *outSize, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gadd42a629abd064cfdee5ff90e315a92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab34f7c7bc27f7cbca9c5bccb1cdc1b51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gab34f7c7bc27f7cbca9c5bccb1cdc1b51">FSGetFreeSpaceSizeAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, char *path, uint64_t *outSize, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gab34f7c7bc27f7cbca9c5bccb1cdc1b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa351c6ca5a60498b6f2e453e1f1b9380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaa351c6ca5a60498b6f2e453e1f1b9380">FSGetStatFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gaa351c6ca5a60498b6f2e453e1f1b9380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bb67ef785cdc56ea1ad4a02bce663f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga0bb67ef785cdc56ea1ad4a02bce663f5">FSGetStatFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#structFSStat">FSStat</a> *stat, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga0bb67ef785cdc56ea1ad4a02bce663f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7f3d2a2e3a6d0181a9b5fabce434f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad7f3d2a2e3a6d0181a9b5fabce434f6b">FSReadFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gad7f3d2a2e3a6d0181a9b5fabce434f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13129be833588285173cda45f4634e07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga13129be833588285173cda45f4634e07">FSReadFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga13129be833588285173cda45f4634e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga709b7c38ec22ffcbe37e73910ba26fef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga709b7c38ec22ffcbe37e73910ba26fef">FSReadFileWithPos</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga709b7c38ec22ffcbe37e73910ba26fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78599f6198d4b30ab7bf8468f1b3107f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga78599f6198d4b30ab7bf8468f1b3107f">FSReadFileWithPosAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga78599f6198d4b30ab7bf8468f1b3107f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7261f4f9222932de57b298df1846283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad7261f4f9222932de57b298df1846283">FSWriteFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gad7261f4f9222932de57b298df1846283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga959cbdb58e156292adee282173bccf39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga959cbdb58e156292adee282173bccf39">FSWriteFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga959cbdb58e156292adee282173bccf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf71919bae75bc215af124864b18470d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaf71919bae75bc215af124864b18470d2">FSWriteFileWithPos</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gaf71919bae75bc215af124864b18470d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ebed842fcc4ccf304b525136eb69170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga5ebed842fcc4ccf304b525136eb69170">FSWriteFileWithPosAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, uint8_t *buffer, uint32_t size, uint32_t count, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t unk1, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga5ebed842fcc4ccf304b525136eb69170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae6fb7d700dcb203a83bac2d98ade8c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gaae6fb7d700dcb203a83bac2d98ade8c9">FSGetPosFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> fileHandle, uint32_t *pos, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gaae6fb7d700dcb203a83bac2d98ade8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c4b12022066f8197bd72d8cddd160eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga2c4b12022066f8197bd72d8cddd160eb">FSGetPosFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> fileHandle, uint32_t *pos, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga2c4b12022066f8197bd72d8cddd160eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75976cef9bae6854b7764ec04c62fec2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga75976cef9bae6854b7764ec04c62fec2">FSSetPosFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga75976cef9bae6854b7764ec04c62fec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf2d1415eab3c0d19f8853447a8f1ca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gadf2d1415eab3c0d19f8853447a8f1ca1">FSSetPosFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, uint32_t pos, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:gadf2d1415eab3c0d19f8853447a8f1ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76abe51031ab2f0ce6b12340aad38518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga76abe51031ab2f0ce6b12340aad38518">FSFlushFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga76abe51031ab2f0ce6b12340aad38518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6774e156c1abfda134d9f10bb6502e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga6774e156c1abfda134d9f10bb6502e06">FSFlushFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga6774e156c1abfda134d9f10bb6502e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafce7a63c6647090cd019ae182f209917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gafce7a63c6647090cd019ae182f209917">FSTruncateFile</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gafce7a63c6647090cd019ae182f209917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76c71a0e11450c3d33d6885a0b0157a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga76c71a0e11450c3d33d6885a0b0157a4">FSTruncateFileAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, <a class="el" href="group__coreinit__fs.html#ga05375f3bcf9cadbf37d0ae805826a2c6">FSFileHandle</a> handle, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga76c71a0e11450c3d33d6885a0b0157a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b5804eb975a5dc3d81fd4f018c1e3a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9b5804eb975a5dc3d81fd4f018c1e3a1">FSRename</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *oldPath, const char *newPath, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga9b5804eb975a5dc3d81fd4f018c1e3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6254ede06a679256ffc1ed2aed600597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga6254ede06a679256ffc1ed2aed600597">FSRenameAsync</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *block, const char *oldPath, const char *newPath, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask, <a class="el" href="group__coreinit__fs.html#structFSAsyncData">FSAsyncData</a> *asyncData)</td></tr>
+<tr class="separator:ga6254ede06a679256ffc1ed2aed600597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga979baba07bd5c72713b1c4b6747807df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga7fca3cd5dc44c27e60e7cb422a1bf5b6">FSVolumeState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga979baba07bd5c72713b1c4b6747807df">FSGetVolumeState</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client)</td></tr>
 <tr class="separator:ga979baba07bd5c72713b1c4b6747807df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02275f4380e251278dd36ff39fb81a4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga9d75a2f66784083c8a0946918841f97c">FSError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga02275f4380e251278dd36ff39fb81a4c">FSGetLastErrorCodeForViewer</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client)</td></tr>
 <tr class="separator:ga02275f4380e251278dd36ff39fb81a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga178f2b38483ad1ec7f7ba34f95cc0755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga178f2b38483ad1ec7f7ba34f95cc0755">FSGetMountSource</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, <a class="el" href="group__coreinit__fs.html#ga0aefa3554d6ab3bcb7ced7df4b0117b4">FSMountSourceType</a> type, <a class="el" href="group__coreinit__fs.html#structFSMountSource">FSMountSource</a> *out, uint32_t flags)</td></tr>
-<tr class="separator:ga178f2b38483ad1ec7f7ba34f95cc0755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ce281a1c03a8c1d3ffbf8b12c8c326a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga9ce281a1c03a8c1d3ffbf8b12c8c326a">FSMount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, <a class="el" href="group__coreinit__fs.html#structFSMountSource">FSMountSource</a> *source, const char *target, uint32_t bytes, uint32_t flags)</td></tr>
-<tr class="separator:ga9ce281a1c03a8c1d3ffbf8b12c8c326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3de2dfaa37085d166b5faa33359930d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gad3de2dfaa37085d166b5faa33359930d">FSUnmount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, const char *target, uint32_t flags)</td></tr>
-<tr class="separator:gad3de2dfaa37085d166b5faa33359930d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20a630597b4d174c01d546f8f9091751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga20a630597b4d174c01d546f8f9091751">FSBindMount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, const char *source, const char *target, uint32_t flags)</td></tr>
-<tr class="separator:ga20a630597b4d174c01d546f8f9091751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02087d68709e46237e27c821a7730008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga02087d68709e46237e27c821a7730008">FSbindUnmount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, const char *target, uint32_t flags)</td></tr>
-<tr class="separator:ga02087d68709e46237e27c821a7730008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae434ed78ae7fef8bf141e65b3499380b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#gae434ed78ae7fef8bf141e65b3499380b">FSGetMountSource</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, <a class="el" href="group__coreinit__fs.html#ga0aefa3554d6ab3bcb7ced7df4b0117b4">FSMountSourceType</a> type, <a class="el" href="group__coreinit__fs.html#structFSMountSource">FSMountSource</a> *out, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:gae434ed78ae7fef8bf141e65b3499380b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94de9e57c45f241021449db1e7bd5e9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga94de9e57c45f241021449db1e7bd5e9a">FSMount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, <a class="el" href="group__coreinit__fs.html#structFSMountSource">FSMountSource</a> *source, const char *target, uint32_t bytes, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga94de9e57c45f241021449db1e7bd5e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b949e4e5c6c62188a1422d2b56a3304"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga2b949e4e5c6c62188a1422d2b56a3304">FSUnmount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, const char *target, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga2b949e4e5c6c62188a1422d2b56a3304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga508d13b573b1137c67f37b3c996ae7ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga508d13b573b1137c67f37b3c996ae7ff">FSBindMount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, const char *source, const char *target, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga508d13b573b1137c67f37b3c996ae7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga326ad52cff53550f7aa2cbdcacf91620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__coreinit__fs.html#ga1f6b17153671191447543d781627f223">FSStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__coreinit__fs.html#ga326ad52cff53550f7aa2cbdcacf91620">FSbindUnmount</a> (<a class="el" href="group__coreinit__fs.html#structFSClient">FSClient</a> *client, <a class="el" href="group__coreinit__fs.html#structFSCmdBlock">FSCmdBlock</a> *cmd, const char *target, <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> errorMask)</td></tr>
+<tr class="separator:ga326ad52cff53550f7aa2cbdcacf91620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Mount, access and modify filesystems directly.</p>
@@ -463,7 +496,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00146">146</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00164">164</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div>
 </div>
 </div>
@@ -479,7 +512,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00152">152</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00170">170</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div>
 </div>
 </div>
@@ -495,7 +528,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00158">158</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00176">176</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -574,7 +607,7 @@ modified</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00184">184</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00202">202</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div>
 </div>
 </div>
@@ -590,7 +623,7 @@ modified</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00190">190</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00208">208</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -621,7 +654,7 @@ Type of message. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00204">204</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00222">222</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -659,7 +692,7 @@ ioMsgQueue</td>
 </div><div class="memdoc">
 <div class="textblock"><p>Stores the result of an async FS command. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00218">218</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00236">236</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -708,7 +741,7 @@ The result of the command. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00242">242</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00260">260</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -739,7 +772,7 @@ name[256]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00250">250</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00268">268</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 </div>
 </div>
 </div>
@@ -936,6 +969,20 @@ name[256]</td>
 
 </div>
 </div>
+<a id="ga99183d2eb6bb1d6a872103bb6b345741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99183d2eb6bb1d6a872103bb6b345741">&#9670;&nbsp;</a></span>FSErrorFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a> <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga58b85e803ff2d18ff8d5ea333e20601f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga58b85e803ff2d18ff8d5ea333e20601f">&#9670;&nbsp;</a></span>FSStatus</h2>
 
@@ -1032,11 +1079,43 @@ name[256]</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00144">144</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00162">162</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga0855d2d4cd8ada5af1a2b71246039e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0855d2d4cd8ada5af1a2b71246039e53">&#9670;&nbsp;</a></span>FSErrorFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a536cff1b3fea9dfe46bbf998fc21ee30"></a>FS_ERROR_FLAG_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53abe3262660a51bb75899703d9522733aa"></a>FS_ERROR_FLAG_MAX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a988e36086d1448183b2ca4e005e5877b"></a>FS_ERROR_FLAG_ALREADY_OPEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a08ea0d09e6eed7500fc87c4d36ad8794"></a>FS_ERROR_FLAG_EXISTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a2561336bacb68191ce72e5ec92903942"></a>FS_ERROR_FLAG_NOT_FOUND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a8ae25493bb63422614a4abda483c2def"></a>FS_ERROR_FLAG_NOT_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53aca473dd787d61b21cda3c670a8762509"></a>FS_ERROR_FLAG_NOT_DIR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53af2d8062457af5031947a0d01197d03cc"></a>FS_ERROR_FLAG_ACCESS_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a11627bc63678ef3db779fbba5111f7b8"></a>FS_ERROR_FLAG_PERMISSION_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53aa8d641595763e68b808aaf3502d7df0d"></a>FS_ERROR_FLAG_FILE_TOO_BIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a487094f8a975ad66ad39453ad36a1644"></a>FS_ERROR_FLAG_STORAGE_FULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a2568ee1bc5f1e9040920543affb05515"></a>FS_ERROR_FLAG_UNSUPPORTED_CMD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a4bdcfff3c2be5809a75e76661fef18e5"></a>FS_ERROR_FLAG_JOURNAL_FULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0855d2d4cd8ada5af1a2b71246039e53a5d70a78f721e460807fd119a60d7c49a"></a>FS_ERROR_FLAG_ALL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00038">38</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+
+</div>
+</div>
 <a id="ga1f6b17153671191447543d781627f223"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1f6b17153671191447543d781627f223">&#9670;&nbsp;</a></span>FSStatus</h2>
 
@@ -1070,7 +1149,7 @@ name[256]</td>
 <tr><td class="fieldname"><a id="gga1f6b17153671191447543d781627f223a271aef42489a637eadd791f0998fb6df"></a>FS_STATUS_FATAL_ERROR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00038">38</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00056">56</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1204,7 @@ name[256]</td>
 <tr><td class="fieldname"><a id="gga9d75a2f66784083c8a0946918841f97caa5c3428e235ae8728c6171481041befe"></a>FS_ERROR_INVALID_MEDIA&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00061">61</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00079">79</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1231,7 @@ name[256]</td>
 <tr><td class="fieldname"><a id="gga6262a647f387b5128a72e5fd2ce9c25fa61493c3b97bcac9bc36a4edf3944d308"></a>FS_MODE_EXEC_OTHER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00102">102</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00120">120</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1250,7 @@ name[256]</td>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga34564ba894f3287a5cb0f78f722dcdf6af97a3217e044989725f4ea8f89a57b0d"></a>FS_STAT_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00117">117</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00135">135</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1280,7 @@ name[256]</td>
 <tr><td class="fieldname"><a id="gga7fca3cd5dc44c27e60e7cb422a1bf5b6ae3328fb03de3ea8fa235860275033ba0"></a>FS_VOLUME_STATE_INVALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00122">122</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00140">140</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1300,7 @@ name[256]</td>
 <tr><td class="fieldname"><a id="gga0aefa3554d6ab3bcb7ced7df4b0117b4ae6520daab812a32fa818e3162450729b"></a>FS_MOUNT_SOURCE_UNK&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00138">138</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8h_source.html#l00156">156</a> of file <a class="el" href="filesystem_8h_source.html">filesystem.h</a>.</p>
 
 </div>
 </div>
@@ -1260,8 +1339,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gae6b1c7ae623fb1be303c4b3f894c1e58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae6b1c7ae623fb1be303c4b3f894c1e58">&#9670;&nbsp;</a></span>FSAddClient()</h2>
+<a id="ga760f1f80ec321ac11497639dbe4b5289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga760f1f80ec321ac11497639dbe4b5289">&#9670;&nbsp;</a></span>FSAddClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1275,8 +1354,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1288,8 +1367,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaf809ada814079c8338f7fc01c7653d91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf809ada814079c8338f7fc01c7653d91">&#9670;&nbsp;</a></span>FSDelClient()</h2>
+<a id="gabe6664f632bd98788508e6580f8a11a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe6664f632bd98788508e6580f8a11a9">&#9670;&nbsp;</a></span>FSDelClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1303,8 +1382,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1407,8 +1486,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga8e52409c57c366c57f624dffe1a20cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e52409c57c366c57f624dffe1a20cb2">&#9670;&nbsp;</a></span>FSGetCwd()</h2>
+<a id="gaed0c05ae94e15752864f4ca618878dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed0c05ae94e15752864f4ca618878dda">&#9670;&nbsp;</a></span>FSGetCwd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1440,8 +1519,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1453,8 +1532,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga6c20a87378abde146d411f4a6f6771ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c20a87378abde146d411f4a6f6771ed">&#9670;&nbsp;</a></span>FSChangeDir()</h2>
+<a id="ga639b242647970bae759e1854a103af61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga639b242647970bae759e1854a103af61">&#9670;&nbsp;</a></span>FSChangeDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1480,8 +1559,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1493,8 +1572,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga325f4672edf33485e69818b64d5bf95d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga325f4672edf33485e69818b64d5bf95d">&#9670;&nbsp;</a></span>FSChangeDirAsync()</h2>
+<a id="gad3beb4db49800a14e4b60c14efb6808b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3beb4db49800a14e4b60c14efb6808b">&#9670;&nbsp;</a></span>FSChangeDirAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1520,8 +1599,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1557,8 +1636,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga1dbe33607c343ac5cb88381003662efb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1dbe33607c343ac5cb88381003662efb">&#9670;&nbsp;</a></span>FSGetStat()</h2>
+<a id="ga9646eba3da257d6c8c6567ee399ca5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9646eba3da257d6c8c6567ee399ca5f6">&#9670;&nbsp;</a></span>FSGetStat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1590,8 +1669,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1603,8 +1682,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga5aa4bcbe7432c32cc20977875994a1d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5aa4bcbe7432c32cc20977875994a1d5">&#9670;&nbsp;</a></span>FSGetStatAsync()</h2>
+<a id="gad7fe88d1312c87646de73a12913da316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7fe88d1312c87646de73a12913da316">&#9670;&nbsp;</a></span>FSGetStatAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1636,8 +1715,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1655,8 +1734,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga84e2dc8e555ab2d51be4b234d2d6ad5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga84e2dc8e555ab2d51be4b234d2d6ad5b">&#9670;&nbsp;</a></span>FSRemove()</h2>
+<a id="ga344285052c238931420a49875eb0e3c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga344285052c238931420a49875eb0e3c2">&#9670;&nbsp;</a></span>FSRemove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1682,8 +1761,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1695,8 +1774,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga30ca4ecd100c25cd3e0e3f73d2b88f6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30ca4ecd100c25cd3e0e3f73d2b88f6a">&#9670;&nbsp;</a></span>FSRemoveAsync()</h2>
+<a id="ga2ca213d2260bd1f1b34187b9a47efd83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ca213d2260bd1f1b34187b9a47efd83">&#9670;&nbsp;</a></span>FSRemoveAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1722,8 +1801,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1741,8 +1820,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga5ac705f23d6d2e421e3001e8650d31ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ac705f23d6d2e421e3001e8650d31ee">&#9670;&nbsp;</a></span>FSOpenFile()</h2>
+<a id="ga33afd82e53a692a6ea89993afdae45ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga33afd82e53a692a6ea89993afdae45ff">&#9670;&nbsp;</a></span>FSOpenFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1780,8 +1859,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1793,8 +1872,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gae80045016bfddb9630c6b6c9ad82899f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae80045016bfddb9630c6b6c9ad82899f">&#9670;&nbsp;</a></span>FSOpenFileAsync()</h2>
+<a id="ga76ec728d36fc73099af8806945ef420a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76ec728d36fc73099af8806945ef420a">&#9670;&nbsp;</a></span>FSOpenFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1832,8 +1911,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1851,8 +1930,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaffee1c1cebc8ddaf19562d80fa64c24d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffee1c1cebc8ddaf19562d80fa64c24d">&#9670;&nbsp;</a></span>FSCloseFile()</h2>
+<a id="gac7b5a7d33b12f917f6acd076a95bed94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7b5a7d33b12f917f6acd076a95bed94">&#9670;&nbsp;</a></span>FSCloseFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1878,8 +1957,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1891,8 +1970,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga9b53d68828f0c244a91cc85388178d73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b53d68828f0c244a91cc85388178d73">&#9670;&nbsp;</a></span>FSCloseFileAsync()</h2>
+<a id="ga9f3c7f9cd0cf62ba64e9cbf136e4396a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f3c7f9cd0cf62ba64e9cbf136e4396a">&#9670;&nbsp;</a></span>FSCloseFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1918,8 +1997,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1937,8 +2016,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gafdcb815d20df20c0dec4c9abc12feaca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafdcb815d20df20c0dec4c9abc12feaca">&#9670;&nbsp;</a></span>FSOpenDir()</h2>
+<a id="gaeead023badf2b9569c2599f73bf8c6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeead023badf2b9569c2599f73bf8c6a6">&#9670;&nbsp;</a></span>FSOpenDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1970,8 +2049,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1983,8 +2062,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga6c3cc277e16158e3a4cb76b037b3cf47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c3cc277e16158e3a4cb76b037b3cf47">&#9670;&nbsp;</a></span>FSOpenDirAsync()</h2>
+<a id="ga7c90ceda1df3f12c4615eb7bf052c5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c90ceda1df3f12c4615eb7bf052c5d6">&#9670;&nbsp;</a></span>FSOpenDirAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2016,8 +2095,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2035,8 +2114,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga76e389b6b63c5e9e9e174913cb9c83e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga76e389b6b63c5e9e9e174913cb9c83e4">&#9670;&nbsp;</a></span>FSMakeDir()</h2>
+<a id="gaa64b1b35f2269488088095f302e6f407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa64b1b35f2269488088095f302e6f407">&#9670;&nbsp;</a></span>FSMakeDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2062,8 +2141,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2075,8 +2154,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaf230fe66f03556850cc7b2ef520dec78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf230fe66f03556850cc7b2ef520dec78">&#9670;&nbsp;</a></span>FSMakeDirAsync()</h2>
+<a id="ga9b1992a594ea9d6fd27ece3027aca785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b1992a594ea9d6fd27ece3027aca785">&#9670;&nbsp;</a></span>FSMakeDirAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2102,8 +2181,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2121,8 +2200,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gab527678f4952d10e16c7755674e615e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab527678f4952d10e16c7755674e615e6">&#9670;&nbsp;</a></span>FSReadDir()</h2>
+<a id="ga7ccabfb7058d7800b1c669f0d7b0746b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ccabfb7058d7800b1c669f0d7b0746b">&#9670;&nbsp;</a></span>FSReadDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2154,8 +2233,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2167,8 +2246,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gacae0c0c96644131d65b63fec6b9348b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacae0c0c96644131d65b63fec6b9348b2">&#9670;&nbsp;</a></span>FSReadDirAsync()</h2>
+<a id="gabadc8cb739151c89e40912e05dba295f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabadc8cb739151c89e40912e05dba295f">&#9670;&nbsp;</a></span>FSReadDirAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2200,8 +2279,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2219,8 +2298,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga013c06ce52d6e341647e054fdcacf03a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga013c06ce52d6e341647e054fdcacf03a">&#9670;&nbsp;</a></span>FSRewindDir()</h2>
+<a id="ga3170ab03aa0e68c90c172051dbaa77c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3170ab03aa0e68c90c172051dbaa77c4">&#9670;&nbsp;</a></span>FSRewindDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2246,8 +2325,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2259,8 +2338,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga0b6d84a9b812cd8bb9d1b6b7ceaf31f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0b6d84a9b812cd8bb9d1b6b7ceaf31f2">&#9670;&nbsp;</a></span>FSCloseDir()</h2>
+<a id="gad47a09942b9b2fdc5984ef1cd5cd6e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad47a09942b9b2fdc5984ef1cd5cd6e3f">&#9670;&nbsp;</a></span>FSCloseDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2286,8 +2365,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2299,8 +2378,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga54ca366b15c2c4609bd6a8d2ddbf10a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga54ca366b15c2c4609bd6a8d2ddbf10a4">&#9670;&nbsp;</a></span>FSCloseDirAsync()</h2>
+<a id="gac0b1ecc4c4ba01b5c8413b8212af01d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0b1ecc4c4ba01b5c8413b8212af01d7">&#9670;&nbsp;</a></span>FSCloseDirAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2326,8 +2405,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2345,8 +2424,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gab9fd06d1a241dd83a46b4084828171fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab9fd06d1a241dd83a46b4084828171fd">&#9670;&nbsp;</a></span>FSChangeMode()</h2>
+<a id="ga9901d53bf43cd5b1ee87514e0ab91894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9901d53bf43cd5b1ee87514e0ab91894">&#9670;&nbsp;</a></span>FSChangeMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2378,8 +2457,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2391,8 +2470,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaa414236a93ef73e246e16d1a09876709"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa414236a93ef73e246e16d1a09876709">&#9670;&nbsp;</a></span>FSChangeModeAsync()</h2>
+<a id="gad93a2dc6559fd69c9a2f2f42a250681b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad93a2dc6559fd69c9a2f2f42a250681b">&#9670;&nbsp;</a></span>FSChangeModeAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2424,8 +2503,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2443,8 +2522,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga0397b4710788a2d475af13dda955c356"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0397b4710788a2d475af13dda955c356">&#9670;&nbsp;</a></span>FSGetFreeSpaceSize()</h2>
+<a id="gadd42a629abd064cfdee5ff90e315a92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd42a629abd064cfdee5ff90e315a92b">&#9670;&nbsp;</a></span>FSGetFreeSpaceSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2476,8 +2555,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2489,8 +2568,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gabf6ded1a1b74b883d335ee0e7167f327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf6ded1a1b74b883d335ee0e7167f327">&#9670;&nbsp;</a></span>FSGetFreeSpaceSizeAsync()</h2>
+<a id="gab34f7c7bc27f7cbca9c5bccb1cdc1b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab34f7c7bc27f7cbca9c5bccb1cdc1b51">&#9670;&nbsp;</a></span>FSGetFreeSpaceSizeAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2522,8 +2601,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2541,8 +2620,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaab7a5689fd0df1112819969d9c975008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab7a5689fd0df1112819969d9c975008">&#9670;&nbsp;</a></span>FSGetStatFile()</h2>
+<a id="gaa351c6ca5a60498b6f2e453e1f1b9380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa351c6ca5a60498b6f2e453e1f1b9380">&#9670;&nbsp;</a></span>FSGetStatFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2574,8 +2653,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2587,8 +2666,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaa6ab89925210fcaf553a7e09b116bc00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6ab89925210fcaf553a7e09b116bc00">&#9670;&nbsp;</a></span>FSGetStatFileAsync()</h2>
+<a id="ga0bb67ef785cdc56ea1ad4a02bce663f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bb67ef785cdc56ea1ad4a02bce663f5">&#9670;&nbsp;</a></span>FSGetStatFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2620,8 +2699,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2639,8 +2718,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaeb2e5f8da780143139b1063c33027f91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb2e5f8da780143139b1063c33027f91">&#9670;&nbsp;</a></span>FSReadFile()</h2>
+<a id="gad7f3d2a2e3a6d0181a9b5fabce434f6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7f3d2a2e3a6d0181a9b5fabce434f6b">&#9670;&nbsp;</a></span>FSReadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2690,8 +2769,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2703,8 +2782,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gab79ebab01218bba7efb878d5808cc549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab79ebab01218bba7efb878d5808cc549">&#9670;&nbsp;</a></span>FSReadFileAsync()</h2>
+<a id="ga13129be833588285173cda45f4634e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13129be833588285173cda45f4634e07">&#9670;&nbsp;</a></span>FSReadFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2754,8 +2833,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2773,8 +2852,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga1dc0f94e4e56545011a13242b8187e9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1dc0f94e4e56545011a13242b8187e9b">&#9670;&nbsp;</a></span>FSReadFileWithPos()</h2>
+<a id="ga709b7c38ec22ffcbe37e73910ba26fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709b7c38ec22ffcbe37e73910ba26fef">&#9670;&nbsp;</a></span>FSReadFileWithPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2830,8 +2909,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2843,8 +2922,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gadc3b8151d6deb726c12c1ea1415848fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadc3b8151d6deb726c12c1ea1415848fe">&#9670;&nbsp;</a></span>FSReadFileWithPosAsync()</h2>
+<a id="ga78599f6198d4b30ab7bf8468f1b3107f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78599f6198d4b30ab7bf8468f1b3107f">&#9670;&nbsp;</a></span>FSReadFileWithPosAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2900,8 +2979,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2919,8 +2998,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga52e0d781d81dfde7639ea121611625c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52e0d781d81dfde7639ea121611625c8">&#9670;&nbsp;</a></span>FSWriteFile()</h2>
+<a id="gad7261f4f9222932de57b298df1846283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7261f4f9222932de57b298df1846283">&#9670;&nbsp;</a></span>FSWriteFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2970,8 +3049,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2983,8 +3062,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga2ff16152cd18b276de847f85707dae94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2ff16152cd18b276de847f85707dae94">&#9670;&nbsp;</a></span>FSWriteFileAsync()</h2>
+<a id="ga959cbdb58e156292adee282173bccf39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga959cbdb58e156292adee282173bccf39">&#9670;&nbsp;</a></span>FSWriteFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3034,8 +3113,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3053,8 +3132,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga92de3d0c94660683d41af0e724794a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92de3d0c94660683d41af0e724794a88">&#9670;&nbsp;</a></span>FSWriteFileWithPos()</h2>
+<a id="gaf71919bae75bc215af124864b18470d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf71919bae75bc215af124864b18470d2">&#9670;&nbsp;</a></span>FSWriteFileWithPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3110,8 +3189,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3123,8 +3202,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gac6d4112e13f25df7b34d7fa1f99a5f73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6d4112e13f25df7b34d7fa1f99a5f73">&#9670;&nbsp;</a></span>FSWriteFileWithPosAsync()</h2>
+<a id="ga5ebed842fcc4ccf304b525136eb69170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ebed842fcc4ccf304b525136eb69170">&#9670;&nbsp;</a></span>FSWriteFileWithPosAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3180,8 +3259,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3199,8 +3278,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaa3b155af2b58e7c55000feea13c8c344"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa3b155af2b58e7c55000feea13c8c344">&#9670;&nbsp;</a></span>FSGetPosFile()</h2>
+<a id="gaae6fb7d700dcb203a83bac2d98ade8c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae6fb7d700dcb203a83bac2d98ade8c9">&#9670;&nbsp;</a></span>FSGetPosFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3232,8 +3311,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3245,8 +3324,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga1601ecd3c75bdb1cc1a33ff59ff75206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1601ecd3c75bdb1cc1a33ff59ff75206">&#9670;&nbsp;</a></span>FSGetPosFileAsync()</h2>
+<a id="ga2c4b12022066f8197bd72d8cddd160eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c4b12022066f8197bd72d8cddd160eb">&#9670;&nbsp;</a></span>FSGetPosFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3278,8 +3357,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3297,8 +3376,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga999fcf3d7c8f2f4bc7db59004642552f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga999fcf3d7c8f2f4bc7db59004642552f">&#9670;&nbsp;</a></span>FSSetPosFile()</h2>
+<a id="ga75976cef9bae6854b7764ec04c62fec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75976cef9bae6854b7764ec04c62fec2">&#9670;&nbsp;</a></span>FSSetPosFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3330,8 +3409,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3343,8 +3422,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga9017d098fb0c8d585c06fb510cc243c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9017d098fb0c8d585c06fb510cc243c3">&#9670;&nbsp;</a></span>FSSetPosFileAsync()</h2>
+<a id="gadf2d1415eab3c0d19f8853447a8f1ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf2d1415eab3c0d19f8853447a8f1ca1">&#9670;&nbsp;</a></span>FSSetPosFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3376,8 +3455,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3395,8 +3474,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga3333531974ac1e266c3c395f9848a78d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3333531974ac1e266c3c395f9848a78d">&#9670;&nbsp;</a></span>FSFlushFile()</h2>
+<a id="ga76abe51031ab2f0ce6b12340aad38518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76abe51031ab2f0ce6b12340aad38518">&#9670;&nbsp;</a></span>FSFlushFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3422,8 +3501,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3435,8 +3514,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gaf7a030fc92a14e7146cdc4466ee65cb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf7a030fc92a14e7146cdc4466ee65cb0">&#9670;&nbsp;</a></span>FSFlushFileAsync()</h2>
+<a id="ga6774e156c1abfda134d9f10bb6502e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6774e156c1abfda134d9f10bb6502e06">&#9670;&nbsp;</a></span>FSFlushFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3462,8 +3541,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3481,8 +3560,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gae61bdaed510a844c7ad7ccfea0d5b057"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae61bdaed510a844c7ad7ccfea0d5b057">&#9670;&nbsp;</a></span>FSTruncateFile()</h2>
+<a id="gafce7a63c6647090cd019ae182f209917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafce7a63c6647090cd019ae182f209917">&#9670;&nbsp;</a></span>FSTruncateFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3508,8 +3587,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3521,8 +3600,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga9e52bab5d05fb8273910ab5f6f68172a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e52bab5d05fb8273910ab5f6f68172a">&#9670;&nbsp;</a></span>FSTruncateFileAsync()</h2>
+<a id="ga76c71a0e11450c3d33d6885a0b0157a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76c71a0e11450c3d33d6885a0b0157a4">&#9670;&nbsp;</a></span>FSTruncateFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3548,8 +3627,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3567,8 +3646,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga286649da34fff22d432166a931245f43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga286649da34fff22d432166a931245f43">&#9670;&nbsp;</a></span>FSRename()</h2>
+<a id="ga9b5804eb975a5dc3d81fd4f018c1e3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b5804eb975a5dc3d81fd4f018c1e3a1">&#9670;&nbsp;</a></span>FSRename()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3600,8 +3679,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3613,8 +3692,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gab023e58fcab3790467db16db2e654343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab023e58fcab3790467db16db2e654343">&#9670;&nbsp;</a></span>FSRenameAsync()</h2>
+<a id="ga6254ede06a679256ffc1ed2aed600597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6254ede06a679256ffc1ed2aed600597">&#9670;&nbsp;</a></span>FSRenameAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3646,8 +3725,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3701,8 +3780,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga178f2b38483ad1ec7f7ba34f95cc0755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga178f2b38483ad1ec7f7ba34f95cc0755">&#9670;&nbsp;</a></span>FSGetMountSource()</h2>
+<a id="gae434ed78ae7fef8bf141e65b3499380b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae434ed78ae7fef8bf141e65b3499380b">&#9670;&nbsp;</a></span>FSGetMountSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3734,8 +3813,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3747,8 +3826,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga9ce281a1c03a8c1d3ffbf8b12c8c326a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ce281a1c03a8c1d3ffbf8b12c8c326a">&#9670;&nbsp;</a></span>FSMount()</h2>
+<a id="ga94de9e57c45f241021449db1e7bd5e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94de9e57c45f241021449db1e7bd5e9a">&#9670;&nbsp;</a></span>FSMount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3786,8 +3865,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3799,8 +3878,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="gad3de2dfaa37085d166b5faa33359930d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3de2dfaa37085d166b5faa33359930d">&#9670;&nbsp;</a></span>FSUnmount()</h2>
+<a id="ga2b949e4e5c6c62188a1422d2b56a3304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b949e4e5c6c62188a1422d2b56a3304">&#9670;&nbsp;</a></span>FSUnmount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3826,8 +3905,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3839,8 +3918,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga20a630597b4d174c01d546f8f9091751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20a630597b4d174c01d546f8f9091751">&#9670;&nbsp;</a></span>FSBindMount()</h2>
+<a id="ga508d13b573b1137c67f37b3c996ae7ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga508d13b573b1137c67f37b3c996ae7ff">&#9670;&nbsp;</a></span>FSBindMount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3872,8 +3951,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3885,8 +3964,8 @@ name[256]</td>
 
 </div>
 </div>
-<a id="ga02087d68709e46237e27c821a7730008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02087d68709e46237e27c821a7730008">&#9670;&nbsp;</a></span>FSbindUnmount()</h2>
+<a id="ga326ad52cff53550f7aa2cbdcacf91620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga326ad52cff53550f7aa2cbdcacf91620">&#9670;&nbsp;</a></span>FSbindUnmount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3912,8 +3991,8 @@ name[256]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__coreinit__fs.html#ga0855d2d4cd8ada5af1a2b71246039e53">FSErrorFlag</a>&#160;</td>
+          <td class="paramname"><em>errorMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

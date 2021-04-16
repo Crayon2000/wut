@@ -84,319 +84,128 @@ Collaboration diagram for Socket:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:structsockaddr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a></td></tr>
-<tr class="separator:structsockaddr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structsockaddr__storage"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structsockaddr__storage">sockaddr_storage</a></td></tr>
-<tr class="separator:structsockaddr__storage"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structlinger"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structlinger">linger</a></td></tr>
-<tr class="separator:structlinger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structin__addr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a></td></tr>
-<tr class="separator:structin__addr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structsockaddr__in"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structsockaddr__in">sockaddr_in</a></td></tr>
-<tr class="separator:structsockaddr__in"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structnsysnet__fd__set"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a></td></tr>
+<tr class="separator:structnsysnet__fd__set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structnsysnet__timeval"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#structnsysnet__timeval">nsysnet_timeval</a></td></tr>
+<tr class="separator:structnsysnet__timeval"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga92d045f6ee2f343d6b28830a9fec082e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga92d045f6ee2f343d6b28830a9fec082e">SOL_SOCKET</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ga92d045f6ee2f343d6b28830a9fec082e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d1940045dc2e7de552f3d4ff13a74ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga5d1940045dc2e7de552f3d4ff13a74ab">INADDR_ANY</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga5d1940045dc2e7de552f3d4ff13a74ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a725f61ded23ce8a7dff8e82ed51986"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga4a725f61ded23ce8a7dff8e82ed51986">INADDR_BROADCAST</a>&#160;&#160;&#160;0xFFFFFFFF</td></tr>
-<tr class="separator:ga4a725f61ded23ce8a7dff8e82ed51986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51dba11ffc8e3b1bf695e721b3144094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga51dba11ffc8e3b1bf695e721b3144094">PF_UNSPEC</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga51dba11ffc8e3b1bf695e721b3144094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f5da0b5be27fe31ec7cc11bfa8d1a25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga3f5da0b5be27fe31ec7cc11bfa8d1a25">PF_INET</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga3f5da0b5be27fe31ec7cc11bfa8d1a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga323f2649198fc7e64b19881869265618"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga323f2649198fc7e64b19881869265618">PF_INET6</a>&#160;&#160;&#160;23</td></tr>
-<tr class="separator:ga323f2649198fc7e64b19881869265618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae77ae24b14b7b7f294f3e04121173f12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gae77ae24b14b7b7f294f3e04121173f12">AF_UNSPEC</a>&#160;&#160;&#160;<a class="el" href="group__nsysnet__socket.html#ga51dba11ffc8e3b1bf695e721b3144094">PF_UNSPEC</a></td></tr>
-<tr class="separator:gae77ae24b14b7b7f294f3e04121173f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9930604d0e32588eae76f43ca38e7826"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga9930604d0e32588eae76f43ca38e7826">AF_INET</a>&#160;&#160;&#160;<a class="el" href="group__nsysnet__socket.html#ga3f5da0b5be27fe31ec7cc11bfa8d1a25">PF_INET</a></td></tr>
-<tr class="separator:ga9930604d0e32588eae76f43ca38e7826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa03706b2738b9a58d4985dfbe99e1bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaa03706b2738b9a58d4985dfbe99e1bac">AF_INET6</a>&#160;&#160;&#160;<a class="el" href="group__nsysnet__socket.html#ga323f2649198fc7e64b19881869265618">PF_INET6</a></td></tr>
-<tr class="separator:gaa03706b2738b9a58d4985dfbe99e1bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga249394484f9410a2e3f8eba24657feb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga249394484f9410a2e3f8eba24657feb9">SOCK_STREAM</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga249394484f9410a2e3f8eba24657feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4db8b9a846c67404db0b6f014f9a9fdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga4db8b9a846c67404db0b6f014f9a9fdf">SOCK_DGRAM</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga4db8b9a846c67404db0b6f014f9a9fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99bc202592bac1adbd525f47b359b722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga99bc202592bac1adbd525f47b359b722">MSG_OOB</a>&#160;&#160;&#160;0x0001</td></tr>
-<tr class="separator:ga99bc202592bac1adbd525f47b359b722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60c35b1016d0d87fe1066ea817acad98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga60c35b1016d0d87fe1066ea817acad98">MSG_PEEK</a>&#160;&#160;&#160;0x0002</td></tr>
-<tr class="separator:ga60c35b1016d0d87fe1066ea817acad98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9643e949e179396230792b56fe7f6f06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga9643e949e179396230792b56fe7f6f06">MSG_DONTROUTE</a>&#160;&#160;&#160;0x0004</td></tr>
-<tr class="separator:ga9643e949e179396230792b56fe7f6f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab18d3d439e4a9c8d0f73e7166e8eb376"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gab18d3d439e4a9c8d0f73e7166e8eb376">MSG_DONTWAIT</a>&#160;&#160;&#160;0x0020</td></tr>
-<tr class="separator:gab18d3d439e4a9c8d0f73e7166e8eb376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1c8cf84ac37451afaef3bde9976b6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaf1c8cf84ac37451afaef3bde9976b6e1">SHUT_RD</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gaf1c8cf84ac37451afaef3bde9976b6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaddb0a758e6fafdd89f5b7120f84738eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaddb0a758e6fafdd89f5b7120f84738eb">SHUT_WR</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gaddb0a758e6fafdd89f5b7120f84738eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80c54d1399557c97a0c81a319d08e9db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga80c54d1399557c97a0c81a319d08e9db">SHUT_RDWR</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga80c54d1399557c97a0c81a319d08e9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf96615d54d7d81630efc2e8f1770223"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gabf96615d54d7d81630efc2e8f1770223">IPPROTO_IP</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gabf96615d54d7d81630efc2e8f1770223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94f83c72c1e5e6ef453e47cf59885fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga94f83c72c1e5e6ef453e47cf59885fb5">IPPROTO_TCP</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:ga94f83c72c1e5e6ef453e47cf59885fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab332d40b15142f33a88d4fcb1d6a5920"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gab332d40b15142f33a88d4fcb1d6a5920">IPPROTO_UDP</a>&#160;&#160;&#160;17</td></tr>
-<tr class="separator:gab332d40b15142f33a88d4fcb1d6a5920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5589f74fada0d0cd47bd6ea8741a58ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga5589f74fada0d0cd47bd6ea8741a58ee">SO_REUSEADDR</a>&#160;&#160;&#160;0x0004</td></tr>
-<tr class="separator:ga5589f74fada0d0cd47bd6ea8741a58ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad05e5d66b4608d73747c4a10b802a737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad05e5d66b4608d73747c4a10b802a737">SO_BROADCAST</a>&#160;&#160;&#160;0x0020</td></tr>
-<tr class="separator:gad05e5d66b4608d73747c4a10b802a737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga552d2cd8ffc1157c016299c5eba95b72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga552d2cd8ffc1157c016299c5eba95b72">SO_LINGER</a>&#160;&#160;&#160;0x0080</td></tr>
-<tr class="separator:ga552d2cd8ffc1157c016299c5eba95b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ab39f351679dd0e32436f0e6c9890d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga1ab39f351679dd0e32436f0e6c9890d4">SO_OOBINLINE</a>&#160;&#160;&#160;0x0100</td></tr>
-<tr class="separator:ga1ab39f351679dd0e32436f0e6c9890d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga326ce4e40002ecf1ccecf9ff26d71906"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga326ce4e40002ecf1ccecf9ff26d71906">SO_TCPSACK</a>&#160;&#160;&#160;0x0200</td></tr>
-<tr class="separator:ga326ce4e40002ecf1ccecf9ff26d71906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga117a985137d5faf4f6c7d77e123b8813"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga117a985137d5faf4f6c7d77e123b8813">SO_WINSCALE</a>&#160;&#160;&#160;0x0400</td></tr>
-<tr class="separator:ga117a985137d5faf4f6c7d77e123b8813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf618cbb85161ff3196d3bcdf7565ba64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaf618cbb85161ff3196d3bcdf7565ba64">SO_SNDBUF</a>&#160;&#160;&#160;0x1001</td></tr>
-<tr class="separator:gaf618cbb85161ff3196d3bcdf7565ba64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0db12e960ac303030400d9fd95391b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga0db12e960ac303030400d9fd95391b52">SO_RCVBUF</a>&#160;&#160;&#160;0x1002</td></tr>
-<tr class="separator:ga0db12e960ac303030400d9fd95391b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b4707f0d55cfacf9cd25e5554975c8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga5b4707f0d55cfacf9cd25e5554975c8f">SO_SNDLOWAT</a>&#160;&#160;&#160;0x1003</td></tr>
-<tr class="separator:ga5b4707f0d55cfacf9cd25e5554975c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac750f0f8266f391654627fe3068f79c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gac750f0f8266f391654627fe3068f79c8">SO_RCVLOWAT</a>&#160;&#160;&#160;0x1004</td></tr>
-<tr class="separator:gac750f0f8266f391654627fe3068f79c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ab1e00e94a92737d3a4b407f7fa90f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga8ab1e00e94a92737d3a4b407f7fa90f1">SO_TYPE</a>&#160;&#160;&#160;0x1008</td></tr>
-<tr class="separator:ga8ab1e00e94a92737d3a4b407f7fa90f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga040d4fd00495232970a03425bc00e77a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga040d4fd00495232970a03425bc00e77a">SO_ERROR</a>&#160;&#160;&#160;0x1009</td></tr>
-<tr class="separator:ga040d4fd00495232970a03425bc00e77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34c46dd3b7fbcd0ebd52d66fa03ee65c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga34c46dd3b7fbcd0ebd52d66fa03ee65c">SO_NBIO</a>&#160;&#160;&#160;0x1014</td></tr>
-<tr class="separator:ga34c46dd3b7fbcd0ebd52d66fa03ee65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d88a2968a340f307c5842105ec35c84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga6d88a2968a340f307c5842105ec35c84">SO_BIO</a>&#160;&#160;&#160;0x1015</td></tr>
-<tr class="separator:ga6d88a2968a340f307c5842105ec35c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2ceb8d4369cba78fd8811283e7d5b48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gac2ceb8d4369cba78fd8811283e7d5b48">SO_NONBLOCK</a>&#160;&#160;&#160;0x1016</td></tr>
-<tr class="separator:gac2ceb8d4369cba78fd8811283e7d5b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffc55e6cf60dcee7205a2fcd877b49b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaffc55e6cf60dcee7205a2fcd877b49b3">NSN_EAGAIN</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:gaffc55e6cf60dcee7205a2fcd877b49b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a72f8656be880f5dbde7711f0ab9cda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga1a72f8656be880f5dbde7711f0ab9cda">NSN_EWOULDBLOCK</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:ga1a72f8656be880f5dbde7711f0ab9cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e1511e18de6b7f586d0bd04812ad859"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga8e1511e18de6b7f586d0bd04812ad859">NSYSNET_FD_SETSIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ga8e1511e18de6b7f586d0bd04812ad859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d24cd4014915fafc17c21badf0da984"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga9d24cd4014915fafc17c21badf0da984">NSYSNET_FD_SET</a>(n,  p)&#160;&#160;&#160;((p)-&gt;fds_bits |= (1L &lt;&lt; (n)))</td></tr>
+<tr class="separator:ga9d24cd4014915fafc17c21badf0da984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5fed3671a03b897bdcb4388a99285a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaa5fed3671a03b897bdcb4388a99285a1">NSYSNET_FD_CLR</a>(n,  p)&#160;&#160;&#160;((p)-&gt;fds_bits &amp;= ~(1L &lt;&lt; (n)))</td></tr>
+<tr class="separator:gaa5fed3671a03b897bdcb4388a99285a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07d768bf9d06f48708fa8e7d1b5dcad9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga07d768bf9d06f48708fa8e7d1b5dcad9">NSYSNET_FD_ISSET</a>(n,  p)&#160;&#160;&#160;((p)-&gt;fds_bits &amp; (1L &lt;&lt; (n)))</td></tr>
+<tr class="separator:ga07d768bf9d06f48708fa8e7d1b5dcad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c1af49e977ad41cdb91d85676a8a7df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga8c1af49e977ad41cdb91d85676a8a7df">NSYSNET_FD_ZERO</a>(p)&#160;&#160;&#160;((p)-&gt;fds_bits = 0L)</td></tr>
+<tr class="separator:ga8c1af49e977ad41cdb91d85676a8a7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga3f5f480bed01f54df564b99350f1d1bb"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a></td></tr>
-<tr class="separator:ga3f5f480bed01f54df564b99350f1d1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22bf2db06ebc5466014e637d419cef90"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga22bf2db06ebc5466014e637d419cef90">sa_family_t</a></td></tr>
-<tr class="separator:ga22bf2db06ebc5466014e637d419cef90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6cf7e7cb6d6a7dca774977c8893e127"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad6cf7e7cb6d6a7dca774977c8893e127">nsysnet_fd_mask</a></td></tr>
+<tr class="separator:gad6cf7e7cb6d6a7dca774977c8893e127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9c393505e4902322907ed461c1be83e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gab9c393505e4902322907ed461c1be83e">nsysnet_fd_set</a></td></tr>
+<tr class="separator:gab9c393505e4902322907ed461c1be83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa6779bbd3ee86fec7811f4ab4b916954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaa6779bbd3ee86fec7811f4ab4b916954">socket_lib_init</a> ()</td></tr>
-<tr class="separator:gaa6779bbd3ee86fec7811f4ab4b916954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga199f211423d21f413eabfffbacfd9493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga199f211423d21f413eabfffbacfd9493">socket_lib_finish</a> ()</td></tr>
-<tr class="separator:ga199f211423d21f413eabfffbacfd9493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7937a1ce0c865387d092f8440f7ef5bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga7937a1ce0c865387d092f8440f7ef5bd">accept</a> (int sockfd, struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
-<tr class="separator:ga7937a1ce0c865387d092f8440f7ef5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82199bcd81894331533a25f08e172480"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga82199bcd81894331533a25f08e172480">bind</a> (int sockfd, const struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> addrlen)</td></tr>
-<tr class="separator:ga82199bcd81894331533a25f08e172480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03a98fdcd6c919f9f9b9f0d49d3cc49b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga03a98fdcd6c919f9f9b9f0d49d3cc49b">socketclose</a> (int sockfd)</td></tr>
-<tr class="separator:ga03a98fdcd6c919f9f9b9f0d49d3cc49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdfd99b6c59c833776412fbb0c539efb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gacdfd99b6c59c833776412fbb0c539efb">connect</a> (int sockfd, const struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> addrlen)</td></tr>
-<tr class="separator:gacdfd99b6c59c833776412fbb0c539efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad56bbd2dab72a7d4062e62bd0b129435"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad56bbd2dab72a7d4062e62bd0b129435">getpeername</a> (int sockfd, struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
-<tr class="separator:gad56bbd2dab72a7d4062e62bd0b129435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7895af1011e7b9ff128eda29e773a84e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga7895af1011e7b9ff128eda29e773a84e">getsockname</a> (int sockfd, struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
-<tr class="separator:ga7895af1011e7b9ff128eda29e773a84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab81d992040a0b29b4f9fd20a263ab1d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gab81d992040a0b29b4f9fd20a263ab1d0">getsockopt</a> (int sockfd, int level, int optname, void *optval, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *optlen)</td></tr>
-<tr class="separator:gab81d992040a0b29b4f9fd20a263ab1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5989c21d05cb17caba26cef496a7beea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga5989c21d05cb17caba26cef496a7beea">listen</a> (int sockfd, int backlog)</td></tr>
-<tr class="separator:ga5989c21d05cb17caba26cef496a7beea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45206cc2181bcd7eddcc9e3b3b27b637"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga45206cc2181bcd7eddcc9e3b3b27b637">recv</a> (int sockfd, void *buf, size_t len, int flags)</td></tr>
-<tr class="separator:ga45206cc2181bcd7eddcc9e3b3b27b637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9589bdf98da6cd301c6d3a2d4b4a5243"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga9589bdf98da6cd301c6d3a2d4b4a5243">recvfrom</a> (int sockfd, void *buf, size_t len, int flags, struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *src_addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
-<tr class="separator:ga9589bdf98da6cd301c6d3a2d4b4a5243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4852a645ab3207179dd9f9a2f480b28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gac4852a645ab3207179dd9f9a2f480b28">send</a> (int sockfd, const void *buf, size_t len, int flags)</td></tr>
-<tr class="separator:gac4852a645ab3207179dd9f9a2f480b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad37ee7b58324423eb6da7637d85dba29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad37ee7b58324423eb6da7637d85dba29">sendto</a> (int sockfd, const void *buf, size_t len, int flags, const struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *dest_addr, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> addrlen)</td></tr>
-<tr class="separator:gad37ee7b58324423eb6da7637d85dba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf188b4433461a4224c209231689e8270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaf188b4433461a4224c209231689e8270">setsockopt</a> (int sockfd, int level, int optname, const void *optval, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> optlen)</td></tr>
-<tr class="separator:gaf188b4433461a4224c209231689e8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga402425b8e1ceab40ac38a949babcf1aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga402425b8e1ceab40ac38a949babcf1aa">shutdown</a> (int sockfd, int how)</td></tr>
-<tr class="separator:ga402425b8e1ceab40ac38a949babcf1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4e0711877c45a41168ac677b0670ccd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaf4e0711877c45a41168ac677b0670ccd">socket</a> (int domain, int type, int protocol)</td></tr>
-<tr class="separator:gaf4e0711877c45a41168ac677b0670ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd056a205aa6181762de87c1d8c9a210"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gadd056a205aa6181762de87c1d8c9a210">select</a> (int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout)</td></tr>
-<tr class="separator:gadd056a205aa6181762de87c1d8c9a210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0da303c73c2b8673a5a2fa875b8a19e8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga0da303c73c2b8673a5a2fa875b8a19e8">inet_ntoa</a> (struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a> in)</td></tr>
-<tr class="separator:ga0da303c73c2b8673a5a2fa875b8a19e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0862fc1245301294bfdd3dd5ed97a1f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad0862fc1245301294bfdd3dd5ed97a1f">inet_ntoa_r</a> (struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a> in, char *buf)</td></tr>
-<tr class="separator:gad0862fc1245301294bfdd3dd5ed97a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga102fcb53ee2ffdbeceeec5b5ffa0cb1c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga102fcb53ee2ffdbeceeec5b5ffa0cb1c">inet_ntop</a> (int af, const void *src, char *dst, <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> size)</td></tr>
-<tr class="separator:ga102fcb53ee2ffdbeceeec5b5ffa0cb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdce1d46efd09e8485a2f682b388ebc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gacdce1d46efd09e8485a2f682b388ebc0">inet_pton</a> (int af, const char *src, void *dst)</td></tr>
-<tr class="separator:gacdce1d46efd09e8485a2f682b388ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e14cfa6ded77b65c948476358284cf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga2e14cfa6ded77b65c948476358284cf1">inet_aton</a> (const char *cp, struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a> *inp)</td></tr>
-<tr class="separator:ga2e14cfa6ded77b65c948476358284cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabffaf13b8aaa3d58494997caa8a7e477"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gabffaf13b8aaa3d58494997caa8a7e477">socketlasterr</a> ()</td></tr>
-<tr class="separator:gabffaf13b8aaa3d58494997caa8a7e477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c5e62361984ca888ac4b840cf059c6f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga5c5e62361984ca888ac4b840cf059c6f">htonl</a> (uint32_t val)</td></tr>
-<tr class="separator:ga5c5e62361984ca888ac4b840cf059c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d6ce1e421c5ea25eb7aa4aa06b75534"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga5d6ce1e421c5ea25eb7aa4aa06b75534">htons</a> (uint16_t val)</td></tr>
-<tr class="separator:ga5d6ce1e421c5ea25eb7aa4aa06b75534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa102b61428484589b89c98c7798ee65d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaa102b61428484589b89c98c7798ee65d">ntohl</a> (uint32_t val)</td></tr>
-<tr class="separator:gaa102b61428484589b89c98c7798ee65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf792d74a36744bbc7307fd9a7dedd234"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaf792d74a36744bbc7307fd9a7dedd234">ntohs</a> (uint16_t val)</td></tr>
-<tr class="separator:gaf792d74a36744bbc7307fd9a7dedd234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00b2bac7e4d0a255b50824add363ff16"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga00b2bac7e4d0a255b50824add363ff16">socket_lib_init</a> ()</td></tr>
+<tr class="separator:ga00b2bac7e4d0a255b50824add363ff16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae304802caa4e3bdcae3775a363a694e"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaae304802caa4e3bdcae3775a363a694e">socket_lib_finish</a> ()</td></tr>
+<tr class="separator:gaae304802caa4e3bdcae3775a363a694e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e977b0040b1ffc4cf9716264a21cbb7"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga3e977b0040b1ffc4cf9716264a21cbb7">accept</a> (int sockfd, struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:ga3e977b0040b1ffc4cf9716264a21cbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef7c45a52b3500ea3837cfa6f64fdfd5"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaef7c45a52b3500ea3837cfa6f64fdfd5">bind</a> (int sockfd, const struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> addrlen)</td></tr>
+<tr class="separator:gaef7c45a52b3500ea3837cfa6f64fdfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga995be6a44fb7955816905612a891286d"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga995be6a44fb7955816905612a891286d">socketclose</a> (int sockfd)</td></tr>
+<tr class="separator:ga995be6a44fb7955816905612a891286d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4caef2231a609c86f289fcf7a22ef83"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad4caef2231a609c86f289fcf7a22ef83">connect</a> (int sockfd, const struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> addrlen)</td></tr>
+<tr class="separator:gad4caef2231a609c86f289fcf7a22ef83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a9f6b4f568e8fa65fea32dc016a1228"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga4a9f6b4f568e8fa65fea32dc016a1228">getpeername</a> (int sockfd, struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:ga4a9f6b4f568e8fa65fea32dc016a1228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea26fd244405f7518b50c9d328d80269"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gaea26fd244405f7518b50c9d328d80269">getsockname</a> (int sockfd, struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:gaea26fd244405f7518b50c9d328d80269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11212a51bed6583bb4a3ad71c11e2896"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga11212a51bed6583bb4a3ad71c11e2896">getsockopt</a> (int sockfd, int level, int optname, void *optval, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *optlen)</td></tr>
+<tr class="separator:ga11212a51bed6583bb4a3ad71c11e2896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad58e2897fa535433e7e2fd741b235979"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad58e2897fa535433e7e2fd741b235979">listen</a> (int sockfd, int backlog)</td></tr>
+<tr class="separator:gad58e2897fa535433e7e2fd741b235979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga647c05541351ea0cb7abd9d092e86f6c"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga647c05541351ea0cb7abd9d092e86f6c">recv</a> (int sockfd, void *buf, size_t len, int flags)</td></tr>
+<tr class="separator:ga647c05541351ea0cb7abd9d092e86f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga310dc68bccedb2a892e0b5d93b946cb1"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga310dc68bccedb2a892e0b5d93b946cb1">recvfrom</a> (int sockfd, void *buf, size_t len, int flags, struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *src_addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:ga310dc68bccedb2a892e0b5d93b946cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02ec67959cdd7496dcad76c290481510"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga02ec67959cdd7496dcad76c290481510">send</a> (int sockfd, const void *buf, size_t len, int flags)</td></tr>
+<tr class="separator:ga02ec67959cdd7496dcad76c290481510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8f203b2d010f69b077cfd8b18ffbb55"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad8f203b2d010f69b077cfd8b18ffbb55">sendto</a> (int sockfd, const void *buf, size_t len, int flags, const struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *dest_addr, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> addrlen)</td></tr>
+<tr class="separator:gad8f203b2d010f69b077cfd8b18ffbb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433e535d32e1df3512e4e3c71465a4ae"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga433e535d32e1df3512e4e3c71465a4ae">setsockopt</a> (int sockfd, int level, int optname, const void *optval, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> optlen)</td></tr>
+<tr class="separator:ga433e535d32e1df3512e4e3c71465a4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga234cb749a0e1cb8ca148ca80195df046"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga234cb749a0e1cb8ca148ca80195df046">shutdown</a> (int sockfd, int how)</td></tr>
+<tr class="separator:ga234cb749a0e1cb8ca148ca80195df046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ec3a857fe289345fcf695d4d06f265b"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga3ec3a857fe289345fcf695d4d06f265b">socket</a> (int domain, int type, int protocol)</td></tr>
+<tr class="separator:ga3ec3a857fe289345fcf695d4d06f265b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ce8846db51ecdbadb9ec462551a92d5"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga9ce8846db51ecdbadb9ec462551a92d5">select</a> (int nfds, <a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> *readfds, <a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> *writefds, <a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> *exceptfds, struct <a class="el" href="group__nsysnet__socket.html#structnsysnet__timeval">nsysnet_timeval</a> *timeout)</td></tr>
+<tr class="separator:ga9ce8846db51ecdbadb9ec462551a92d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65ce2bb8e39535603ca3dffd1971c689"><td class="memItemLeft" align="right" valign="top">const char *<a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga65ce2bb8e39535603ca3dffd1971c689">inet_ntop</a> (int af, const void *src, char *dst, <a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> size)</td></tr>
+<tr class="separator:ga65ce2bb8e39535603ca3dffd1971c689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga250a53634b36c22bc22f8dfdaf7b4d2a"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#ga250a53634b36c22bc22f8dfdaf7b4d2a">inet_pton</a> (int af, const char *src, void *dst)</td></tr>
+<tr class="separator:ga250a53634b36c22bc22f8dfdaf7b4d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad70bdb51c1638b0bb4fd1e4defc629ac"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nsysnet__socket.html#gad70bdb51c1638b0bb4fd1e4defc629ac">socketlasterr</a> ()</td></tr>
+<tr class="separator:gad70bdb51c1638b0bb4fd1e4defc629ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structsockaddr" id="structsockaddr"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structsockaddr">&#9670;&nbsp;</a></span>sockaddr</h2>
+<a name="structnsysnet__fd__set" id="structnsysnet__fd__set"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structnsysnet__fd__set">&#9670;&nbsp;</a></span>nsysnet_fd_set</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct sockaddr</td>
+          <td class="memname">struct nsysnet_fd_set</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00077">77</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00033">33</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="a36eaef69fff1193837626c2833ab507a"></a><a class="el" href="group__nsysnet__socket.html#ga22bf2db06ebc5466014e637d419cef90">sa_family_t</a></td>
+<a id="a9c407ae11028794801807e3575e29b0e"></a><a class="el" href="group__nsysnet__socket.html#gad6cf7e7cb6d6a7dca774977c8893e127">nsysnet_fd_mask</a></td>
 <td class="fieldname">
-sa_family</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ab92ef26b74c80139475481ea0deb21a8"></a>char</td>
-<td class="fieldname">
-sa_data[]</td>
+fds_bits</td>
 <td class="fielddoc">
 </td></tr>
 </table>
 
 </div>
 </div>
-<a name="structsockaddr__storage" id="structsockaddr__storage"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structsockaddr__storage">&#9670;&nbsp;</a></span>sockaddr_storage</h2>
+<a name="structnsysnet__timeval" id="structnsysnet__timeval"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structnsysnet__timeval">&#9670;&nbsp;</a></span>nsysnet_timeval</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct sockaddr_storage</td>
+          <td class="memname">struct nsysnet_timeval</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00083">83</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00038">38</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="ae3ea34576030e8c0674c47de5bcaf9d5"></a><a class="el" href="group__nsysnet__socket.html#ga22bf2db06ebc5466014e637d419cef90">sa_family_t</a></td>
+<a id="ad7ba4ed1f2602412d3b21ab19720fbb2"></a>long</td>
 <td class="fieldname">
-ss_family</td>
+tv_sec</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a159e08bced3dd9355a196455be4d902d"></a>char</td>
+<a id="ae2b525ea8a77dac853f2e78587b40fce"></a>long</td>
 <td class="fieldname">
-ss_padding[14]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structlinger" id="structlinger"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structlinger">&#9670;&nbsp;</a></span>linger</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct linger</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00089">89</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="a53f550a39f9923b9dbc6a67adc423cc0"></a>int</td>
-<td class="fieldname">
-l_onoff</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a86a5f304dfcd62d626f27bbd3796683d"></a>int</td>
-<td class="fieldname">
-l_linger</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structin__addr" id="structin__addr"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structin__addr">&#9670;&nbsp;</a></span>in_addr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct in_addr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00095">95</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ab9db80bdd56057358ee6b04f9448a5ee"></a>unsigned int</td>
-<td class="fieldname">
-s_addr</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structsockaddr__in" id="structsockaddr__in"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structsockaddr__in">&#9670;&nbsp;</a></span>sockaddr_in</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct sockaddr_in</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00100">100</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ab94314390938f112761a80e5fd1582fc"></a>unsigned short</td>
-<td class="fieldname">
-sin_family</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a0eae6616c263e76ee1c4a13dfbcd42a5"></a>unsigned short</td>
-<td class="fieldname">
-sin_port</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a1c7bfbfe59dbefd9344f98157b26ccdc"></a>struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a></td>
-<td class="fieldname">
-sin_addr</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a019cb683bfdac71a46a437c71a792c99"></a>char</td>
-<td class="fieldname">
-sin_zero[8]</td>
+tv_usec</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -404,656 +213,174 @@ sin_zero[8]</td>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga92d045f6ee2f343d6b28830a9fec082e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92d045f6ee2f343d6b28830a9fec082e">&#9670;&nbsp;</a></span>SOL_SOCKET</h2>
+<a id="ga8e1511e18de6b7f586d0bd04812ad859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e1511e18de6b7f586d0bd04812ad859">&#9670;&nbsp;</a></span>NSYSNET_FD_SETSIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SOL_SOCKET&#160;&#160;&#160;-1</td>
+          <td class="memname">#define NSYSNET_FD_SETSIZE&#160;&#160;&#160;32</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00019">19</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00023">23</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
-<a id="ga5d1940045dc2e7de552f3d4ff13a74ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d1940045dc2e7de552f3d4ff13a74ab">&#9670;&nbsp;</a></span>INADDR_ANY</h2>
+<a id="ga9d24cd4014915fafc17c21badf0da984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d24cd4014915fafc17c21badf0da984">&#9670;&nbsp;</a></span>NSYSNET_FD_SET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INADDR_ANY&#160;&#160;&#160;0</td>
+          <td class="memname">#define NSYSNET_FD_SET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((p)-&gt;fds_bits |= (1L &lt;&lt; (n)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00021">21</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00025">25</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
-<a id="ga4a725f61ded23ce8a7dff8e82ed51986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a725f61ded23ce8a7dff8e82ed51986">&#9670;&nbsp;</a></span>INADDR_BROADCAST</h2>
+<a id="gaa5fed3671a03b897bdcb4388a99285a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5fed3671a03b897bdcb4388a99285a1">&#9670;&nbsp;</a></span>NSYSNET_FD_CLR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INADDR_BROADCAST&#160;&#160;&#160;0xFFFFFFFF</td>
+          <td class="memname">#define NSYSNET_FD_CLR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((p)-&gt;fds_bits &amp;= ~(1L &lt;&lt; (n)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00022">22</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00026">26</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
-<a id="ga51dba11ffc8e3b1bf695e721b3144094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga51dba11ffc8e3b1bf695e721b3144094">&#9670;&nbsp;</a></span>PF_UNSPEC</h2>
+<a id="ga07d768bf9d06f48708fa8e7d1b5dcad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07d768bf9d06f48708fa8e7d1b5dcad9">&#9670;&nbsp;</a></span>NSYSNET_FD_ISSET</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PF_UNSPEC&#160;&#160;&#160;0</td>
+          <td class="memname">#define NSYSNET_FD_ISSET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((p)-&gt;fds_bits &amp; (1L &lt;&lt; (n)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00024">24</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00027">27</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
-<a id="ga3f5da0b5be27fe31ec7cc11bfa8d1a25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f5da0b5be27fe31ec7cc11bfa8d1a25">&#9670;&nbsp;</a></span>PF_INET</h2>
+<a id="ga8c1af49e977ad41cdb91d85676a8a7df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c1af49e977ad41cdb91d85676a8a7df">&#9670;&nbsp;</a></span>NSYSNET_FD_ZERO</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PF_INET&#160;&#160;&#160;2</td>
+          <td class="memname">#define NSYSNET_FD_ZERO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;((p)-&gt;fds_bits = 0L)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00025">25</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga323f2649198fc7e64b19881869265618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga323f2649198fc7e64b19881869265618">&#9670;&nbsp;</a></span>PF_INET6</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PF_INET6&#160;&#160;&#160;23</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00026">26</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gae77ae24b14b7b7f294f3e04121173f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae77ae24b14b7b7f294f3e04121173f12">&#9670;&nbsp;</a></span>AF_UNSPEC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AF_UNSPEC&#160;&#160;&#160;<a class="el" href="group__nsysnet__socket.html#ga51dba11ffc8e3b1bf695e721b3144094">PF_UNSPEC</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00028">28</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga9930604d0e32588eae76f43ca38e7826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9930604d0e32588eae76f43ca38e7826">&#9670;&nbsp;</a></span>AF_INET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AF_INET&#160;&#160;&#160;<a class="el" href="group__nsysnet__socket.html#ga3f5da0b5be27fe31ec7cc11bfa8d1a25">PF_INET</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00029">29</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gaa03706b2738b9a58d4985dfbe99e1bac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa03706b2738b9a58d4985dfbe99e1bac">&#9670;&nbsp;</a></span>AF_INET6</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AF_INET6&#160;&#160;&#160;<a class="el" href="group__nsysnet__socket.html#ga323f2649198fc7e64b19881869265618">PF_INET6</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00030">30</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga249394484f9410a2e3f8eba24657feb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga249394484f9410a2e3f8eba24657feb9">&#9670;&nbsp;</a></span>SOCK_STREAM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SOCK_STREAM&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00032">32</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga4db8b9a846c67404db0b6f014f9a9fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4db8b9a846c67404db0b6f014f9a9fdf">&#9670;&nbsp;</a></span>SOCK_DGRAM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SOCK_DGRAM&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00033">33</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga99bc202592bac1adbd525f47b359b722"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga99bc202592bac1adbd525f47b359b722">&#9670;&nbsp;</a></span>MSG_OOB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MSG_OOB&#160;&#160;&#160;0x0001</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00035">35</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga60c35b1016d0d87fe1066ea817acad98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60c35b1016d0d87fe1066ea817acad98">&#9670;&nbsp;</a></span>MSG_PEEK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MSG_PEEK&#160;&#160;&#160;0x0002</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00036">36</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga9643e949e179396230792b56fe7f6f06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9643e949e179396230792b56fe7f6f06">&#9670;&nbsp;</a></span>MSG_DONTROUTE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MSG_DONTROUTE&#160;&#160;&#160;0x0004</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00037">37</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gab18d3d439e4a9c8d0f73e7166e8eb376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab18d3d439e4a9c8d0f73e7166e8eb376">&#9670;&nbsp;</a></span>MSG_DONTWAIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MSG_DONTWAIT&#160;&#160;&#160;0x0020</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00038">38</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gaf1c8cf84ac37451afaef3bde9976b6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf1c8cf84ac37451afaef3bde9976b6e1">&#9670;&nbsp;</a></span>SHUT_RD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SHUT_RD&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00040">40</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gaddb0a758e6fafdd89f5b7120f84738eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaddb0a758e6fafdd89f5b7120f84738eb">&#9670;&nbsp;</a></span>SHUT_WR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SHUT_WR&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00041">41</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga80c54d1399557c97a0c81a319d08e9db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80c54d1399557c97a0c81a319d08e9db">&#9670;&nbsp;</a></span>SHUT_RDWR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SHUT_RDWR&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00042">42</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gabf96615d54d7d81630efc2e8f1770223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf96615d54d7d81630efc2e8f1770223">&#9670;&nbsp;</a></span>IPPROTO_IP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IPPROTO_IP&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00044">44</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga94f83c72c1e5e6ef453e47cf59885fb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94f83c72c1e5e6ef453e47cf59885fb5">&#9670;&nbsp;</a></span>IPPROTO_TCP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IPPROTO_TCP&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00045">45</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gab332d40b15142f33a88d4fcb1d6a5920"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab332d40b15142f33a88d4fcb1d6a5920">&#9670;&nbsp;</a></span>IPPROTO_UDP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IPPROTO_UDP&#160;&#160;&#160;17</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00046">46</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga5589f74fada0d0cd47bd6ea8741a58ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5589f74fada0d0cd47bd6ea8741a58ee">&#9670;&nbsp;</a></span>SO_REUSEADDR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_REUSEADDR&#160;&#160;&#160;0x0004</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00051">51</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gad05e5d66b4608d73747c4a10b802a737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad05e5d66b4608d73747c4a10b802a737">&#9670;&nbsp;</a></span>SO_BROADCAST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_BROADCAST&#160;&#160;&#160;0x0020</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00052">52</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga552d2cd8ffc1157c016299c5eba95b72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga552d2cd8ffc1157c016299c5eba95b72">&#9670;&nbsp;</a></span>SO_LINGER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_LINGER&#160;&#160;&#160;0x0080</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00053">53</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga1ab39f351679dd0e32436f0e6c9890d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ab39f351679dd0e32436f0e6c9890d4">&#9670;&nbsp;</a></span>SO_OOBINLINE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_OOBINLINE&#160;&#160;&#160;0x0100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00054">54</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga326ce4e40002ecf1ccecf9ff26d71906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga326ce4e40002ecf1ccecf9ff26d71906">&#9670;&nbsp;</a></span>SO_TCPSACK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_TCPSACK&#160;&#160;&#160;0x0200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00055">55</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga117a985137d5faf4f6c7d77e123b8813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga117a985137d5faf4f6c7d77e123b8813">&#9670;&nbsp;</a></span>SO_WINSCALE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_WINSCALE&#160;&#160;&#160;0x0400</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00056">56</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gaf618cbb85161ff3196d3bcdf7565ba64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf618cbb85161ff3196d3bcdf7565ba64">&#9670;&nbsp;</a></span>SO_SNDBUF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_SNDBUF&#160;&#160;&#160;0x1001</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00057">57</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga0db12e960ac303030400d9fd95391b52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0db12e960ac303030400d9fd95391b52">&#9670;&nbsp;</a></span>SO_RCVBUF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_RCVBUF&#160;&#160;&#160;0x1002</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00058">58</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga5b4707f0d55cfacf9cd25e5554975c8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b4707f0d55cfacf9cd25e5554975c8f">&#9670;&nbsp;</a></span>SO_SNDLOWAT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_SNDLOWAT&#160;&#160;&#160;0x1003</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00059">59</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gac750f0f8266f391654627fe3068f79c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac750f0f8266f391654627fe3068f79c8">&#9670;&nbsp;</a></span>SO_RCVLOWAT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_RCVLOWAT&#160;&#160;&#160;0x1004</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00060">60</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga8ab1e00e94a92737d3a4b407f7fa90f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8ab1e00e94a92737d3a4b407f7fa90f1">&#9670;&nbsp;</a></span>SO_TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_TYPE&#160;&#160;&#160;0x1008</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00061">61</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga040d4fd00495232970a03425bc00e77a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga040d4fd00495232970a03425bc00e77a">&#9670;&nbsp;</a></span>SO_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_ERROR&#160;&#160;&#160;0x1009</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00062">62</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga34c46dd3b7fbcd0ebd52d66fa03ee65c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34c46dd3b7fbcd0ebd52d66fa03ee65c">&#9670;&nbsp;</a></span>SO_NBIO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_NBIO&#160;&#160;&#160;0x1014</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00063">63</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga6d88a2968a340f307c5842105ec35c84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6d88a2968a340f307c5842105ec35c84">&#9670;&nbsp;</a></span>SO_BIO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_BIO&#160;&#160;&#160;0x1015</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00064">64</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gac2ceb8d4369cba78fd8811283e7d5b48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2ceb8d4369cba78fd8811283e7d5b48">&#9670;&nbsp;</a></span>SO_NONBLOCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SO_NONBLOCK&#160;&#160;&#160;0x1016</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00065">65</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="gaffc55e6cf60dcee7205a2fcd877b49b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffc55e6cf60dcee7205a2fcd877b49b3">&#9670;&nbsp;</a></span>NSN_EAGAIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NSN_EAGAIN&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00071">71</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
-
-</div>
-</div>
-<a id="ga1a72f8656be880f5dbde7711f0ab9cda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a72f8656be880f5dbde7711f0ab9cda">&#9670;&nbsp;</a></span>NSN_EWOULDBLOCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NSN_EWOULDBLOCK&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00072">72</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00028">28</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga3f5f480bed01f54df564b99350f1d1bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f5f480bed01f54df564b99350f1d1bb">&#9670;&nbsp;</a></span>socklen_t</h2>
+<a id="gad6cf7e7cb6d6a7dca774977c8893e127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6cf7e7cb6d6a7dca774977c8893e127">&#9670;&nbsp;</a></span>nsysnet_fd_mask</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint32_t <a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a></td>
+          <td class="memname">typedef uint32_t <a class="el" href="group__nsysnet__socket.html#gad6cf7e7cb6d6a7dca774977c8893e127">nsysnet_fd_mask</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00074">74</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00030">30</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
-<a id="ga22bf2db06ebc5466014e637d419cef90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga22bf2db06ebc5466014e637d419cef90">&#9670;&nbsp;</a></span>sa_family_t</h2>
+<a id="gab9c393505e4902322907ed461c1be83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9c393505e4902322907ed461c1be83e">&#9670;&nbsp;</a></span>nsysnet_fd_set</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint16_t <a class="el" href="group__nsysnet__socket.html#ga22bf2db06ebc5466014e637d419cef90">sa_family_t</a></td>
+          <td class="memname">typedef struct <a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> <a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_8h_source.html#l00075">75</a> of file <a class="el" href="socket_8h_source.html">socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="__socket_8h_source.html#l00031">31</a> of file <a class="el" href="__socket_8h_source.html">_socket.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa6779bbd3ee86fec7811f4ab4b916954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6779bbd3ee86fec7811f4ab4b916954">&#9670;&nbsp;</a></span>socket_lib_init()</h2>
+<a id="ga00b2bac7e4d0a255b50824add363ff16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00b2bac7e4d0a255b50824add363ff16">&#9670;&nbsp;</a></span>socket_lib_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void socket_lib_init </td>
+          <td class="memname">void <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() socket_lib_init </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1063,14 +390,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga199f211423d21f413eabfffbacfd9493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga199f211423d21f413eabfffbacfd9493">&#9670;&nbsp;</a></span>socket_lib_finish()</h2>
+<a id="gaae304802caa4e3bdcae3775a363a694e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae304802caa4e3bdcae3775a363a694e">&#9670;&nbsp;</a></span>socket_lib_finish()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void socket_lib_finish </td>
+          <td class="memname">void <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() socket_lib_finish </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1080,14 +407,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga7937a1ce0c865387d092f8440f7ef5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7937a1ce0c865387d092f8440f7ef5bd">&#9670;&nbsp;</a></span>accept()</h2>
+<a id="ga3e977b0040b1ffc4cf9716264a21cbb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e977b0040b1ffc4cf9716264a21cbb7">&#9670;&nbsp;</a></span>accept()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int accept </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() accept </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1095,13 +422,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1114,14 +441,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga82199bcd81894331533a25f08e172480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga82199bcd81894331533a25f08e172480">&#9670;&nbsp;</a></span>bind()</h2>
+<a id="gaef7c45a52b3500ea3837cfa6f64fdfd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef7c45a52b3500ea3837cfa6f64fdfd5">&#9670;&nbsp;</a></span>bind()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int bind </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() bind </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1129,13 +456,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1148,14 +475,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga03a98fdcd6c919f9f9b9f0d49d3cc49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03a98fdcd6c919f9f9b9f0d49d3cc49b">&#9670;&nbsp;</a></span>socketclose()</h2>
+<a id="ga995be6a44fb7955816905612a891286d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga995be6a44fb7955816905612a891286d">&#9670;&nbsp;</a></span>socketclose()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int socketclose </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() socketclose </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em></td><td>)</td>
@@ -1166,14 +493,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gacdfd99b6c59c833776412fbb0c539efb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacdfd99b6c59c833776412fbb0c539efb">&#9670;&nbsp;</a></span>connect()</h2>
+<a id="gad4caef2231a609c86f289fcf7a22ef83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4caef2231a609c86f289fcf7a22ef83">&#9670;&nbsp;</a></span>connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int connect </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() connect </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1181,13 +508,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1200,14 +527,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gad56bbd2dab72a7d4062e62bd0b129435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad56bbd2dab72a7d4062e62bd0b129435">&#9670;&nbsp;</a></span>getpeername()</h2>
+<a id="ga4a9f6b4f568e8fa65fea32dc016a1228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a9f6b4f568e8fa65fea32dc016a1228">&#9670;&nbsp;</a></span>getpeername()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getpeername </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() getpeername </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1215,13 +542,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1234,14 +561,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga7895af1011e7b9ff128eda29e773a84e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7895af1011e7b9ff128eda29e773a84e">&#9670;&nbsp;</a></span>getsockname()</h2>
+<a id="gaea26fd244405f7518b50c9d328d80269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea26fd244405f7518b50c9d328d80269">&#9670;&nbsp;</a></span>getsockname()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getsockname </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() getsockname </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1249,13 +576,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1268,14 +595,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gab81d992040a0b29b4f9fd20a263ab1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab81d992040a0b29b4f9fd20a263ab1d0">&#9670;&nbsp;</a></span>getsockopt()</h2>
+<a id="ga11212a51bed6583bb4a3ad71c11e2896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11212a51bed6583bb4a3ad71c11e2896">&#9670;&nbsp;</a></span>getsockopt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getsockopt </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() getsockopt </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1301,7 +628,7 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
           <td class="paramname"><em>optlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1314,14 +641,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga5989c21d05cb17caba26cef496a7beea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5989c21d05cb17caba26cef496a7beea">&#9670;&nbsp;</a></span>listen()</h2>
+<a id="gad58e2897fa535433e7e2fd741b235979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad58e2897fa535433e7e2fd741b235979">&#9670;&nbsp;</a></span>listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int listen </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() listen </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1342,14 +669,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga45206cc2181bcd7eddcc9e3b3b27b637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45206cc2181bcd7eddcc9e3b3b27b637">&#9670;&nbsp;</a></span>recv()</h2>
+<a id="ga647c05541351ea0cb7abd9d092e86f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga647c05541351ea0cb7abd9d092e86f6c">&#9670;&nbsp;</a></span>recv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int recv </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() recv </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1382,14 +709,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga9589bdf98da6cd301c6d3a2d4b4a5243"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9589bdf98da6cd301c6d3a2d4b4a5243">&#9670;&nbsp;</a></span>recvfrom()</h2>
+<a id="ga310dc68bccedb2a892e0b5d93b946cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga310dc68bccedb2a892e0b5d93b946cb1">&#9670;&nbsp;</a></span>recvfrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int recvfrom </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() recvfrom </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1415,13 +742,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>src_addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a> *&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1434,14 +761,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gac4852a645ab3207179dd9f9a2f480b28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4852a645ab3207179dd9f9a2f480b28">&#9670;&nbsp;</a></span>send()</h2>
+<a id="ga02ec67959cdd7496dcad76c290481510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02ec67959cdd7496dcad76c290481510">&#9670;&nbsp;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int send </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() send </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1474,14 +801,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gad37ee7b58324423eb6da7637d85dba29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad37ee7b58324423eb6da7637d85dba29">&#9670;&nbsp;</a></span>sendto()</h2>
+<a id="gad8f203b2d010f69b077cfd8b18ffbb55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8f203b2d010f69b077cfd8b18ffbb55">&#9670;&nbsp;</a></span>sendto()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sendto </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() sendto </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1507,13 +834,13 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="group__nsysnet__socket.html#structsockaddr">sockaddr</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="sys_2socket_8h.html#structsockaddr">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>dest_addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1526,14 +853,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gaf188b4433461a4224c209231689e8270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf188b4433461a4224c209231689e8270">&#9670;&nbsp;</a></span>setsockopt()</h2>
+<a id="ga433e535d32e1df3512e4e3c71465a4ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga433e535d32e1df3512e4e3c71465a4ae">&#9670;&nbsp;</a></span>setsockopt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int setsockopt </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() setsockopt </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1559,7 +886,7 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
           <td class="paramname"><em>optlen</em>&#160;</td>
         </tr>
         <tr>
@@ -1572,14 +899,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga402425b8e1ceab40ac38a949babcf1aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga402425b8e1ceab40ac38a949babcf1aa">&#9670;&nbsp;</a></span>shutdown()</h2>
+<a id="ga234cb749a0e1cb8ca148ca80195df046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga234cb749a0e1cb8ca148ca80195df046">&#9670;&nbsp;</a></span>shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int shutdown </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() shutdown </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
@@ -1600,14 +927,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gaf4e0711877c45a41168ac677b0670ccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf4e0711877c45a41168ac677b0670ccd">&#9670;&nbsp;</a></span>socket()</h2>
+<a id="ga3ec3a857fe289345fcf695d4d06f265b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ec3a857fe289345fcf695d4d06f265b">&#9670;&nbsp;</a></span>socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int socket </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() socket </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>domain</em>, </td>
@@ -1634,14 +961,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gadd056a205aa6181762de87c1d8c9a210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd056a205aa6181762de87c1d8c9a210">&#9670;&nbsp;</a></span>select()</h2>
+<a id="ga9ce8846db51ecdbadb9ec462551a92d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ce8846db51ecdbadb9ec462551a92d5">&#9670;&nbsp;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int select </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() select </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nfds</em>, </td>
@@ -1649,25 +976,25 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> *&#160;</td>
           <td class="paramname"><em>readfds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> *&#160;</td>
           <td class="paramname"><em>writefds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#structnsysnet__fd__set">nsysnet_fd_set</a> *&#160;</td>
           <td class="paramname"><em>exceptfds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structnsysnet__timeval">nsysnet_timeval</a> *&#160;</td>
           <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
@@ -1680,60 +1007,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga0da303c73c2b8673a5a2fa875b8a19e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0da303c73c2b8673a5a2fa875b8a19e8">&#9670;&nbsp;</a></span>inet_ntoa()</h2>
+<a id="ga65ce2bb8e39535603ca3dffd1971c689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65ce2bb8e39535603ca3dffd1971c689">&#9670;&nbsp;</a></span>inet_ntop()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* inet_ntoa </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a>&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad0862fc1245301294bfdd3dd5ed97a1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad0862fc1245301294bfdd3dd5ed97a1f">&#9670;&nbsp;</a></span>inet_ntoa_r()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* inet_ntoa_r </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a>&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga102fcb53ee2ffdbeceeec5b5ffa0cb1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga102fcb53ee2ffdbeceeec5b5ffa0cb1c">&#9670;&nbsp;</a></span>inet_ntop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* inet_ntop </td>
+          <td class="memname">const char* <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() inet_ntop </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>af</em>, </td>
@@ -1753,7 +1034,7 @@ sin_zero[8]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__nsysnet__socket.html#ga3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="sys_2socket_8h.html#a3f5f480bed01f54df564b99350f1d1bb">socklen_t</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -1766,14 +1047,14 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="gacdce1d46efd09e8485a2f682b388ebc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacdce1d46efd09e8485a2f682b388ebc0">&#9670;&nbsp;</a></span>inet_pton()</h2>
+<a id="ga250a53634b36c22bc22f8dfdaf7b4d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga250a53634b36c22bc22f8dfdaf7b4d2a">&#9670;&nbsp;</a></span>inet_pton()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int inet_pton </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() inet_pton </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>af</em>, </td>
@@ -1800,116 +1081,16 @@ sin_zero[8]</td>
 
 </div>
 </div>
-<a id="ga2e14cfa6ded77b65c948476358284cf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2e14cfa6ded77b65c948476358284cf1">&#9670;&nbsp;</a></span>inet_aton()</h2>
+<a id="gad70bdb51c1638b0bb4fd1e4defc629ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad70bdb51c1638b0bb4fd1e4defc629ac">&#9670;&nbsp;</a></span>socketlasterr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int inet_aton </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>cp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="group__nsysnet__socket.html#structin__addr">in_addr</a> *&#160;</td>
-          <td class="paramname"><em>inp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabffaf13b8aaa3d58494997caa8a7e477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabffaf13b8aaa3d58494997caa8a7e477">&#9670;&nbsp;</a></span>socketlasterr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int socketlasterr </td>
+          <td class="memname">int <a class="el" href="wut__rplwrap_8h.html#a76b9c9df67f253d5fd4ed7627a146194">RPLWRAP</a>() socketlasterr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5c5e62361984ca888ac4b840cf059c6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c5e62361984ca888ac4b840cf059c6f">&#9670;&nbsp;</a></span>htonl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t htonl </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5d6ce1e421c5ea25eb7aa4aa06b75534"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d6ce1e421c5ea25eb7aa4aa06b75534">&#9670;&nbsp;</a></span>htons()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t htons </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa102b61428484589b89c98c7798ee65d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa102b61428484589b89c98c7798ee65d">&#9670;&nbsp;</a></span>ntohl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t ntohl </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf792d74a36744bbc7307fd9a7dedd234"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf792d74a36744bbc7307fd9a7dedd234">&#9670;&nbsp;</a></span>ntohs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t ntohs </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

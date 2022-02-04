@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['fflcreateid_4196',['FFLCreateID',['../group__nn__ffl__miidata.html#structFFLCreateID',1,'']]],
+  ['fflimiidatacore_4197',['FFLiMiiDataCore',['../group__nn__ffl__miidata.html#structFFLiMiiDataCore',1,'']]],
+  ['fflimiidataofficial_4198',['FFLiMiiDataOfficial',['../group__nn__ffl__miidata.html#structFFLiMiiDataOfficial',1,'']]],
+  ['fflstoredata_4199',['FFLStoreData',['../group__nn__ffl__miidata.html#structFFLStoreData',1,'']]],
+  ['filestream_4200',['FileStream',['../classnn_1_1sl_1_1FileStream.html',1,'nn::sl']]],
+  ['filestreaminternal_4201',['FileStreamInternal',['../namespacenn_1_1sl.html#structnn_1_1sl_1_1FileStreamInternal',1,'nn::sl']]],
+  ['fiodgname_5farg_4202',['fiodgname_arg',['../filio_8h.html#structfiodgname__arg',1,'']]],
+  ['fsasyncdata_4203',['FSAsyncData',['../group__coreinit__fs.html#structFSAsyncData',1,'']]],
+  ['fsasyncresult_4204',['FSAsyncResult',['../group__coreinit__fs.html#structFSAsyncResult',1,'']]],
+  ['fsclient_4205',['FSClient',['../group__coreinit__fs.html#structFSClient',1,'']]],
+  ['fscmdblock_4206',['FSCmdBlock',['../group__coreinit__fs.html#structFSCmdBlock',1,'']]],
+  ['fsdirectoryentry_4207',['FSDirectoryEntry',['../group__coreinit__fs.html#structFSDirectoryEntry',1,'']]],
+  ['fsmessage_4208',['FSMessage',['../group__coreinit__fs.html#structFSMessage',1,'']]],
+  ['fsmountsource_4209',['FSMountSource',['../group__coreinit__fs.html#structFSMountSource',1,'']]],
+  ['fsstat_4210',['FSStat',['../group__coreinit__fs.html#structFSStat',1,'']]],
+  ['fsstatechangeinfo_4211',['FSStateChangeInfo',['../group__coreinit__fs.html#structFSStateChangeInfo',1,'']]],
+  ['fsvolumeinfo_4212',['FSVolumeInfo',['../group__coreinit__fs.html#structFSVolumeInfo',1,'']]]
+];

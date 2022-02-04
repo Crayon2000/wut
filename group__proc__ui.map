@@ -1,0 +1,4 @@
+<map id="proc_ui" name="proc_ui">
+<area shape="rect" id="node1" href="$group__proc__ui__procui.html" title=" " alt="" coords="123,5,187,31"/>
+<area shape="rect" id="node2" title="Process management library used for managing transitions between foreground and background applicatio..." alt="" coords="5,5,75,31"/>
+</map>

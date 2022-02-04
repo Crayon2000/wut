@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['_5f_5fattribute_5f_5f_4511',['__attribute__',['../nsysnet_2socket_8h.html#adb980b8dd4b8e886d88f619b206b1548',1,'socket.h']]],
+  ['_5f_5fct_5f_5fq3_5f2nn2sl10filestreamfv_4512',['__ct__Q3_2nn2sl10FileStreamFv',['../namespacenn_1_1sl.html#a16e3e42e1f7bb36bf82b7d315530c215',1,'nn::sl']]],
+  ['_5f_5fct_5f_5fq3_5f2nn2sl18launchinfodatabasefv_4513',['__ct__Q3_2nn2sl18LaunchInfoDatabaseFv',['../namespacenn_1_1sl.html#a33650f63cfb04dffac87a22d7d41d861',1,'nn::sl']]],
+  ['_5f_5fdt_5f_5fq3_5f2nn2sl10filestreamfv_4514',['__dt__Q3_2nn2sl10FileStreamFv',['../namespacenn_1_1sl.html#ab752b061183e77df1c75a00fc220ece7',1,'nn::sl']]],
+  ['_5f_5fos_5fsnprintf_4515',['__os_snprintf',['../internal_8h.html#a737930a3f9241fce1d36c6d17ae8e8bb',1,'internal.h']]],
+  ['_5f_5fosgetprocesssdkversion_4516',['__OSGetProcessSDKVersion',['../group__coreinit__systeminfo.html#ga2389893d4f4c195a3007fb70c0cafee4',1,'systeminfo.h']]],
+  ['_5f_5fosvalidateaddressspacerange_4517',['__OSValidateAddressSpaceRange',['../group__coreinit__memorymap.html#ga6f7eb359b87d8ec38faeff70efd68020',1,'memorymap.h']]],
+  ['_5f_5foszeroprocessmemory_4518',['__OSZeroProcessMemory',['../group__coreinit__memory.html#gac59b8505742fdd2c69fb462955784cea',1,'memory.h']]],
+  ['_5f_5fpreinit_5fuser_4519',['__preinit_user',['../group__coreinit__memdefaultheap.html#gac5a96f328d528e378c78fb2925f90ff3',1,'memdefaultheap.h']]],
+  ['_5fexit_4520',['_Exit',['../group__coreinit__exit.html#gad459e22e06681daa1f6b98956b00cf54',1,'exit.h']]],
+  ['_5fgx2debugsetcaptureinterface_4521',['_GX2DebugSetCaptureInterface',['../group__gx2__debug.html#ga2cb9b55fecfb05eea4a17dbd8ff737c8',1,'debug.h']]],
+  ['_5fsysgetsystemapplicationtitleid_4522',['_SYSGetSystemApplicationTitleId',['../group__sysapp__title.html#ga6376648925bff1e594e9696990df7a83',1,'title.h']]],
+  ['_5fsysgetsystemapplicationtitleidbyprodarea_4523',['_SYSGetSystemApplicationTitleIdByProdArea',['../group__sysapp__title.html#gadfb34a74465e1d853c55222d442003b6',1,'title.h']]],
+  ['_5fsyslaunchmenuwithcheckingaccount_4524',['_SYSLaunchMenuWithCheckingAccount',['../group__sysapp__launch.html#ga9d3a42070d869a174c216f836bfb7dc6',1,'launch.h']]],
+  ['_5fsyslaunchmiistudio_4525',['_SYSLaunchMiiStudio',['../group__sysapp__launch.html#ga472b275c0606b343db4ce876a43de66c',1,'launch.h']]],
+  ['_5fsyslaunchnotifications_4526',['_SYSLaunchNotifications',['../group__sysapp__launch.html#ga2fd44cb3ac8a6f7ee4571ed0ddefc79f',1,'launch.h']]],
+  ['_5fsyslaunchparental_4527',['_SYSLaunchParental',['../group__sysapp__launch.html#ga4934065126c8ef664fb1a6504f46e024',1,'launch.h']]],
+  ['_5fsyslaunchsettings_4528',['_SYSLaunchSettings',['../group__sysapp__launch.html#ga34ee18c90dbce770055a2487ccde96cd',1,'launch.h']]],
+  ['_5fsyslaunchtitlewithstdargsinnosplash_4529',['_SYSLaunchTitleWithStdArgsInNoSplash',['../group__sysapp__launch.html#ga8d2f2707b60ff5ec59ad47471cc0d822',1,'launch.h']]],
+  ['_5fsysswitchtomainapp_4530',['_SYSSwitchToMainApp',['../group__sysapp__switch.html#gad7f58e16b0a785a5e852ef333b603c95',1,'switch.h']]]
+];
